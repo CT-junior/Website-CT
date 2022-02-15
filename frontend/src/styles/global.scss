@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #fff;
+    --black: #000;
+
+    --gray-100:#EFEFEF;
+    --gray-200:#C4C4C4;
+    --gray-300:#6D6D6D;
+
+    --green-200: #00646A;
+    --green-400:#003A3D;
+
+    --orange-100:#F89834;
+    --orange-200:#FF6A00;
+}
+
+body{
+    font-family: 'Work Sans';
+    font-weight: 400;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}

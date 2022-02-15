@@ -16,5 +16,3 @@ const IndexPage:NextPage = () => {
 };
 
 export default IndexPage;
-
-

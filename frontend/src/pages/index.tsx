@@ -9,7 +9,9 @@ const IndexPage:NextPage = () => {
       <Head>
         <title>Início | CT JUNIOR</title>
       </Head>
+
       <Header />
+      
       <main >
         <h1>Hello World</h1>
       </main>

@@ -7,7 +7,7 @@ import Styles from './styles.module.scss'
 export function Header(){
     const [classMenuContent, setClassMenuContent] = useState('')
    
-    function handleToggle(){
+    function handleHamburgerNavMenu(){
         if(classMenuContent == ''){
             setClassMenuContent('show')
         }else{
@@ -19,7 +19,7 @@ export function Header(){
         <header className={Styles.headerContainer}>
             <div className={Styles.headerContent}>
                 <div>
-                    <button onClick={handleToggle}>
+                    <button onClick={handleHamburgerNavMenu}>
                         <HamburgerButton />
                     </button>
                     <img src='/images/logoVerde.png' alt="Logo horizontal verde da CT Junior" />

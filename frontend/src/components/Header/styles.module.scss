@@ -9,10 +9,15 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            
+            button{
+                border: none;
+            }
 
             >:first-child{
                 position: absolute;
                 left: 1.75rem;
+ 
             }
             
         }

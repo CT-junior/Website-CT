@@ -4,7 +4,7 @@ import { useState } from 'react'
 export function HamburgerButton(){
     const [classNavMenu, setClassNavMenu] = useState('closed');
 
-    function handleToggle(){
+    function handleHamburgerButton(){
         if(classNavMenu == 'closed'){
             setClassNavMenu('')
         }else{
@@ -15,7 +15,7 @@ export function HamburgerButton(){
     return(
         <div  
             className={`${Styles.bar} ${classNavMenu == 'closed' ? "" : Styles.menuHamburgerOpen}`} 
-            onClick={handleToggle}
+            onClick={handleHamburgerButton}
         >
             <span className={Styles.top}></span>
             <span className={Styles.middle}></span>

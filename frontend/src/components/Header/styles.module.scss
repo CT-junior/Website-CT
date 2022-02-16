@@ -1,0 +1,51 @@
+.headerContainer{
+    background-color: var(--gray-100);
+
+    .headerContent{
+
+        >:first-child{
+            padding: 1rem 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            >:first-child{
+                position: absolute;
+                left: 1.75rem;
+            }
+            
+        }
+
+        .menuContent{
+            width: 100vw;
+            position: fixed;
+                      
+            background: var(--gray-100);
+            padding: 1rem 2rem 1.5rem 2rem;
+            
+            top: -100%;
+            transition: 0.3s ease;
+            
+            z-index: -1;
+
+            nav{
+                display: flex;
+                flex-direction: column;
+                gap: 0.3rem;
+
+                a{
+                    font-family: PT sans, sans-serif;
+                    font-weight: 400;
+                    font-size: 1.3rem;
+                    color: var(--green-400);
+                }
+            }
+        }
+
+        .menuContentShow{
+            top: 3.96rem;
+        }
+    }
+
+}

@@ -1,17 +1,18 @@
 import { useState } from 'react'
 
-import { HamburgerButton } from '../HamburgerButton'
-
 import Styles from './styles.module.scss'
 
 export function Header(){
-    const [classMenuContent, setClassMenuContent] = useState('')
-   
+
+    const [classHamburgerButton, setClassHamburgerButton] = useState('closed');
+
     function handleHamburgerNavMenu(){
-        if(classMenuContent == ''){
-            setClassMenuContent('show')
-        }else{
-            setClassMenuContent('')
+        if(classHamburgerButton == 'closed'){          
+            setClassHamburgerButton('open')
+
+        }else{           
+            setClassHamburgerButton('closed')
+
         }
     }
 
@@ -19,12 +20,17 @@ export function Header(){
         <header className={Styles.headerContainer}>
             <div className={Styles.headerContent}>
                 <div>
-                    <button onClick={handleHamburgerNavMenu}>
-                        <HamburgerButton />
+                    <button  
+                        className={`${Styles.hamburgerMenu} ${classHamburgerButton == 'open' ?  Styles.menuHamburgerOpen : '""'}`} 
+                        onClick={handleHamburgerNavMenu}
+                    >
+                        <span className={Styles.top}></span>
+                        <span className={Styles.middle}></span>
+                        <span className={Styles.bottom}></span>
                     </button>
                     <img src='/images/logoVerde.png' alt="Logo horizontal verde da CT Junior" />
                 </div>
-                <div className={`${Styles.menuContent} ${classMenuContent == 'show' ? Styles.menuContentShow : ''}`}>
+                <div className={`${Styles.menuContent} ${classHamburgerButton == 'open' ? Styles.menuContentShow : ''}`}>
                     <nav>
                         <a href="#">Serviços</a>
                         <a href="#">Quem Somos</a>

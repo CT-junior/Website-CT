@@ -36,8 +36,10 @@ Trabalhamos também com protótipos de aplicativos.</p>
 Trabalhamos também com e regularização, usucapião de imóveis.</p>
 
             </div>
-            <a>Solicitar um Diagnóstico</a>
-            
+            {/* <a>Solicitar um Diagnóstico</a> */}
+            <button className={Styles.requestDiagnosis}>
+              Solicitar um Diagnóstico
+            </button>
           </div>
           
         </section>

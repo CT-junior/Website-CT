@@ -3,6 +3,17 @@ import Head from "next/head";
 
 import { Header } from "../components/Header";
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper';
+
+
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 import Styles from "../styles/home.module.scss";
 
 const IndexPage: NextPage = () => {
@@ -69,7 +80,24 @@ const IndexPage: NextPage = () => {
             <div className={Styles.partnersTitle}>
                 <h2>Nossos Parceiros</h2>
             </div>
+            <Swiper
+              className={Styles.partnersCarrousel}
+              modules={[Autoplay]}     
+              spaceBetween={18}
+              slidesPerView={2.2}
+              loop={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false
+                }}
+            >
+              <SwiperSlide><img src="/images/rocketseatLogo.png" alt="" /></SwiperSlide>
+              <SwiperSlide><img src="/images/ufesLogo.png" alt="" /></SwiperSlide>
+              <SwiperSlide><img src="/images/americanasLogo.png" alt="" /></SwiperSlide>
+              
+            </Swiper>
         </section>
+        
       </main>
     </>
   );

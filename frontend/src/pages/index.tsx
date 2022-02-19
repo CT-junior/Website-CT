@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 
 import { Header } from "../components/Header";
+import { TellUsForm } from "../components/TellUsForm";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
@@ -97,7 +98,12 @@ const IndexPage: NextPage = () => {
               
             </Swiper>
         </section>
-        
+        <section className={Styles.contactUs}>
+          <div className={Styles.contactUsTitle}>
+            <h2>Nos conte sua ideia!</h2>
+          </div>
+          <TellUsForm/>      
+        </section>
       </main>
     </>
   );

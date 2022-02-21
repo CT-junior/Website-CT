@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_servicos",
+  "info": {
+    "singularName": "page-servico",
+    "pluralName": "page-servicos",
+    "displayName": "page-servico",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    }
+  }
+}

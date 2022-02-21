@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "collectionName": "indices",
+  "info": {
+    "singularName": "index",
+    "pluralName": "indices",
+    "displayName": "page-index",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "card.card"
+    },
+    "partners": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "por_que_ct": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "hero_text": {
+      "type": "richtext"
+    }
+  }
+}

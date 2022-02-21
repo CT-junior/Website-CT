@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_material_ricos",
+  "info": {
+    "singularName": "page-material-rico",
+    "pluralName": "page-material-ricos",
+    "displayName": "page-material-rico"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

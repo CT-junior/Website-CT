@@ -61,9 +61,11 @@
         }
 
         button{
+            position: relative;
             width: 6.5rem;
+            height: 2rem;
             cursor: pointer;
-            margin: 2.25rem auto 0 auto;
+            margin: 2.25rem auto 10rem auto;
             padding: 0.425rem 1rem;
 
             font-size: 0.75rem;

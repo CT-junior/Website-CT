@@ -20,9 +20,23 @@ export function TellUsForm() {
           <option value="engenharia-civil">Engenharia Civil</option>
         </select>
 
-        <label htmlFor="investimento">Quanto você pretende investir?</label>
-        <input type="range" id="investimento" min="0" max="5000" />
+        <div className={Styles.sliderContainer}>
+          <label htmlFor="investimento">Quanto você pretende investir?</label>
+          <div className={Styles.slideContent}>
+            <input type="range" id="investimento" min="0" max="5000" />
+            <div>2000</div>
+          </div>
 
+          <div className={Styles.sliderTracinhos}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          
+
+        </div>
+        
         <label htmlFor="ideia">Descreva sua ideia :)</label>
         <textarea id="ideia"></textarea>
         

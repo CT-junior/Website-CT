@@ -16,6 +16,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 import Styles from "../styles/home.module.scss";
+import { Footer } from "../components/Footer";
 
 const IndexPage: NextPage = () => {
   return (
@@ -105,6 +106,8 @@ const IndexPage: NextPage = () => {
           <TellUsForm/>      
         </section>
       </main>
+
+      <Footer/>
     </>
   );
 };

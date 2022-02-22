@@ -1,6 +1,10 @@
+import { useState } from "react";
 import Styles from "./styles.module.scss";
 
 export function TellUsForm() {
+
+  const [rangeValue, setRangeValue] = useState(5)
+  
   return (
     <form action="" className={Styles.tellUsForm}>
       <fieldset>
@@ -22,9 +26,10 @@ export function TellUsForm() {
 
         <div className={Styles.sliderContainer}>
           <label htmlFor="investimento">Quanto você pretende investir?</label>
-          <div className={Styles.slideContent}>
-            <input type="range" id="investimento" min="0" max="5000" />
-            <div>2000</div>
+          <div className={Styles.slideField}>
+            <input type="range" id="investimento" min="0" max="10.00"  onChange={event =>{setRangeValue(Number(event.target.value))}} />
+            <div className={Styles.rangeValue}>{rangeValue}k</div>
+
           </div>
 
           <div className={Styles.sliderTracinhos}>

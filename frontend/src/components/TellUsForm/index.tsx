@@ -3,7 +3,7 @@ import Styles from "./styles.module.scss";
 
 export function TellUsForm() {
 
-  const [rangeValue, setRangeValue] = useState(0)
+  const [rangeValue, setRangeValue] = useState(10)
   const [priceRange, setPriceRange] = useState('Até 10k')
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export function TellUsForm() {
         <div className={Styles.sliderContainer}>
           <label htmlFor="investimento">Quanto você pretende investir?</label>
           <div className={Styles.slideField}>
-            <input type="range" id="investimento" min="0" max="40.00"  onChange={event =>{setRangeValue(Number(event.target.value))}}  value={rangeValue}/>
+            <input type="range" id="investimento" min="10" max="40.00"  onChange={event =>{setRangeValue(Number(event.target.value))}}  value={rangeValue}/>
             <div className={Styles.sliderTracinhos}>
               <span></span>
               <span></span>

@@ -24,9 +24,6 @@ const IndexPage: NextPage = () => {
       <Head>
         <title>Início | CT JUNIOR</title>
       </Head>
-
-      <Header />
-
       <main>
         <section className={Styles.sectionInitial}>
           <h1>
@@ -107,7 +104,6 @@ const IndexPage: NextPage = () => {
         </section>
       </main>
 
-      <Footer/>
     </>
   );
 };

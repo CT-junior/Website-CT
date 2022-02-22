@@ -2,8 +2,6 @@ import { NextPage } from "next";
 import Head from "next/head";
 
 import Styles from "../styles/home.module.scss";
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
 
 const SobreNosPage: NextPage = () => {
   return (
@@ -12,10 +10,7 @@ const SobreNosPage: NextPage = () => {
         <title>Sobre Nós | CT JUNIOR</title>
       </Head>
 
-      <Header />
-
       <main>
-
         <section className={Styles.aboutUsContainer}>
           <div className={Styles.aboutUsContent}>
             <div className={Styles.aboutUsTitle}>
@@ -89,8 +84,6 @@ const SobreNosPage: NextPage = () => {
         </section>
 
       </main>
-
-      
     </>
   );
 };

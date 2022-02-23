@@ -12,10 +12,9 @@ const SobreNosPage: NextPage = () => {
         <title>Sobre Nós | CT JUNIOR</title>
       </Head>
 
-      <Header />
+      <Header/>
 
       <main>
-
         <section className={Styles.aboutUsContainer}>
           <div className={Styles.aboutUsContent}>
             <div className={Styles.aboutUsTitle}>

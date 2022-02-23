@@ -38,21 +38,59 @@
             
         }
 
-        input[type="range"]{
-            margin-top: 0.563rem;
+        .sliderContainer{
+            .slideField{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                
+                input{
+                    width: 100%;
+                    margin-top: 0.563rem;
+        
+                    -webkit-appearance: none;
+                    outline: none;
+        
+                    background-color: var(--dark-blue);
+                    height: 2px;
+        
+                    &::-webkit-slider-thumb{
+                        -webkit-appearance: none;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background: var(--dark-blue);
+                    }
+            
+                }
+                
+                .sliderTracinhos{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
 
-            -webkit-appearance: none;
-            outline: none;
+                    margin-top: 0.5rem;
+                    padding: 0 0.45rem;
+                    
+                    span{
+                        display: block;
+                        width: 1px;
+                        height:4px;
+                        background-color: var(--dark-blue);
+                    }
 
-            background-color: var(--dark-blue);
-            height: 2px;
+                }
+            }
 
-            &::-webkit-slider-thumb{
-                -webkit-appearance: none;
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-                background: var(--dark-blue);
+            margin-bottom: 1rem;
+            
+            .rangeValue{
+               text-align: center; 
+               color: var(--dark-blue);
+
+               font-size: 0.85rem;
+               font-weight: 600;
+
             }
         }
 

@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Head from "next/head";
 
-import Styles from "../styles/home.module.scss";
+import Styles from "../styles/sobrenos.module.scss";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 
@@ -27,7 +27,7 @@ const SobreNosPage: NextPage = () => {
               <br/>
               Fundada em 1993, e federada em 2008 pela Juniores. Atuamos no mercado há 26 anos e nossa carta de serviços engloba as áreas de consultoria empresarial, construção civil e tecnologia da informação. Todo o valor adquirido pela empresa é revertido em investimentos para a formação profissional dos nossos membros e alunos da UFES.
             </p>
-            <img src="" alt="" />
+            <img src="./images/fotoKamikaze.png" alt="Foto dos funcionários da empresa" />
           </div>  
         </section>
 
@@ -44,7 +44,7 @@ const SobreNosPage: NextPage = () => {
               <li>Em 2021, fomos reconhecidos no Evento Nacional de Empresas Juniores e ainda pretendemos alcançar vôos mais altos.</li>
             </ul>
 
-            <img src="" alt="" />
+            <img src="./images/imagemPremio.png" alt="Prêmio recebido pela empresa" />
           </div>
         </section>
 
@@ -53,7 +53,7 @@ const SobreNosPage: NextPage = () => {
             <div className={Styles.ourBelievingsTitle}>
               <h2>No que acreditamos</h2>
             </div>
-            <div>
+            <div className={Styles.ourBelievingsTopics}>
               <h2>Missão</h2>
               <p>Executar projetos de excelência para nossos clientes, contribuindo com o desenvolvimento dos estudantes do centro tecnológico por meio da vivência empresarial.</p>
 
@@ -71,25 +71,29 @@ const SobreNosPage: NextPage = () => {
             <div className={Styles.ourValuesTitle}>
               <h2>Nossos valores</h2>
             </div>
-            <img src="" alt="" />
-            <p><b>Foco em resultados:</b> Buscamos incessantemente a geração de valor para nossos clientes, com foco na qualidade, satisfação e no desenvolvimento de nossos produtos e colaboradores.</p>
 
-            <img src="" alt="" />
-            <p><b>Espirito de dono:</b> Pensamos e agimos como donos, zelando pela nossa instituição. Estamos cientes que somos os únicos responsáveis pelos nossos resultados.</p>
+            <div className={Styles.ourValuesTopics}>
+              <img src="./images/focoResultados.svg" alt="Icone Foco em Resultados" />
+              <p><b>Foco em resultados:</b> Buscamos incessantemente a geração de valor para nossos clientes, com foco na qualidade, satisfação e no desenvolvimento de nossos produtos e colaboradores.</p>
 
-            <img src="" alt="" />
-            <p><b>Empatia:</b> Respeitamos e compreendemos as diferenças, valorizamos as pessoas e nos preocupamos com seu bem estar.</p>
+              <img src="./images/espiritoDono.svg" alt="Icone Espirito de Dono" />
+              <p><b>Espirito de dono:</b> Pensamos e agimos como donos, zelando pela nossa instituição. Estamos cientes que somos os únicos responsáveis pelos nossos resultados.</p>
 
-            <img src="" alt="" />
-            <p><b>Profissionalismo:</b> Agimos com ética, responsabilidade e comprometimento com nossos resultados.</p>
+              <img src="./images/empatia.svg" alt="Icone Empatia" />
+              <p><b>Empatia:</b> Respeitamos e compreendemos as diferenças, valorizamos as pessoas e nos preocupamos com seu bem estar.</p>
 
-            <img src="" alt="" />
-            <p><b>Feedback:</b> Praticamos com transparência a comunicação, buscando sempre o crescimento mútuo.</p>
+              <img src="./images/profissionalismo.svg" alt="Icone Profissionalismo" />
+              <p><b>Profissionalismo:</b> Agimos com ética, responsabilidade e comprometimento com nossos resultados.</p>
+
+              <img src="./images/feedback.svg" alt="Icone Feedback" />
+              <p><b>Feedback:</b> Praticamos com transparência a comunicação, buscando sempre o crescimento mútuo.</p>
+            </div>
           </div>
         </section>
 
       </main>
 
+      <Footer />
       
     </>
   );

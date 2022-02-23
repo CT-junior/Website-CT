@@ -1,47 +1,47 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --white: #fff;
-    --black: #000;
+:root {
+  --white: #fff;
+  --black: #000;
 
-    --gray-100:#F6F6F6;
-    --gray-125:#F4F4F4;
-    --gray-200:#C4C4C4;
-    --gray-300:#6D6D6D;
+  --gray-100: #f6f6f6;
+  --gray-125: #f4f4f4;
+  --gray-200: #c4c4c4;
+  --gray-300: #6d6d6d;
 
-    --green-200: #00646A;
-    --green-400:#003A3D;
+  --green-200: #00646a;
+  --green-400: #003a3d;
 
-    --orange-100:#F89834;
-    --orange-200:#FF6A00;
+  --orange-100: #f89834;
+  --orange-200: #ff6a00;
 
-    --dark-blue: #012123;
+  --dark-blue: #012123;
 }
 
-body{
-    font-family: 'Work Sans';
-    font-weight: 400;
+body {
+  font-family: "Work Sans";
+  font-weight: 400;
 }
 
-button{
-    cursor: pointer;
-    font-family: 'Work Sans';
+button {
+  cursor: pointer;
+  font-family: "Work Sans";
 }
 
-a{
-    color: inherit;
-    text-decoration: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-main{
-    position: relative;
-    top: 3rem;
+main {
+  position: relative;
+  top: 3rem;
 }
-footer{
-    position: relative;
-    top: 3rem;
+footer {
+  position: relative;
+  top: 3rem;
 }

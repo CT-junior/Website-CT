@@ -12,8 +12,6 @@ const SobreNosPage: NextPage = () => {
         <title>Sobre Nós | CT JUNIOR</title>
       </Head>
 
-      <Header/>
-
       <main>
         <section className={Styles.aboutUsContainer}>
           <div className={Styles.aboutUsContent}>
@@ -91,8 +89,6 @@ const SobreNosPage: NextPage = () => {
         </section>
 
       </main>
-
-      <Footer />
       
     </>
   );

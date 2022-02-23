@@ -4,33 +4,24 @@ import Styles from './styles.module.scss'
 
 export function Header(){
 
-    const [classHamburgerButton, setClassHamburgerButton] = useState('closed');
-
-    function handleHamburgerNavMenu(){
-        if(classHamburgerButton == 'closed'){          
-            setClassHamburgerButton('open')
-
-        }else{           
-            setClassHamburgerButton('closed')
-
-        }
-    }
+    const [menuOpen, setMenuOpen] = useState(false);
+    
     return(
         <header className={Styles.headerContainer}>
             <div className={Styles.headerContent}>
                 <div>
                     <button  
-                        className={`${Styles.hamburgerMenu} ${classHamburgerButton == 'open' ?  Styles.menuHamburgerOpen : '""'}`} 
-                        onClick={handleHamburgerNavMenu}
+                        className={`${Styles.hamburgerMenu} ${menuOpen == true ?  Styles.menuHamburgerOpen : ''}`} 
+                        onClick={()=>{setMenuOpen(!menuOpen)}}
                     >
                         <span className={Styles.top}></span>
                         <span className={Styles.middle}></span>
                         <span className={Styles.bottom}></span>
                     </button>
-                    <Link href='/'><img src='/images/logoVerde.png' alt="Logo horizontal verde da CT Junior" /></Link>
+                    <Link href='/'><img onClick={()=>{setMenuOpen(false)}} src='/images/logoVerde.png' alt="Logo horizontal verde da CT Junior" /></Link>
                 </div>
-                <div className={`${Styles.menuContent} ${classHamburgerButton == 'open' ? Styles.menuContentShow : ''}`}>
-                    <nav>
+                <div className={`${Styles.menuContent} ${menuOpen == true ? Styles.menuContentShow : ''}`}>
+                    <nav onClick={()=>{setMenuOpen(false)}}>
                         <Link href='/servicos'><a>Serviços</a></Link>
                         <Link href='/sobrenos'><a>Quem Somos</a></Link>
                         <Link href='/portfolio'><a>Portfólio</a></Link>

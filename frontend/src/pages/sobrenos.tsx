@@ -1,11 +1,52 @@
-import { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
+import { useEffect } from "react";
+
+import { fetchAPI } from "../../lib/api";
 
 import Styles from "../styles/sobrenos.module.scss";
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
 
-const SobreNosPage: NextPage = () => {
+type Image = {
+  url: string,
+  altText: string,  
+}
+
+type OurValues = {
+  id: number,
+  title: string,
+  description: string,
+  image: {
+    data : {
+      attributes: {
+        url: string,
+        alternativeText: string,
+      }
+    }
+  }
+
+}
+
+interface SobreProps {
+  dados: {
+    title: string,
+    content: string,
+    image: Image,
+    title2: string,
+    content2: string,
+    image2: Image,
+    title3: string,
+    content3: string,
+    ourValues: OurValues[]
+  }
+  
+}
+
+export default function SobreNosPage({ dados } : SobreProps){
+
+  useEffect(() =>{
+    fetch('http://localhost:1337/api/sobre?populate=*')
+  })
+
   return (
     <>
       <Head>
@@ -16,49 +57,31 @@ const SobreNosPage: NextPage = () => {
         <section className={Styles.aboutUsContainer}>
           <div className={Styles.aboutUsContent}>
             <div className={Styles.aboutUsTitle}>
-              <h2>Um pouco sobre nós</h2>
+              <h2>{dados.title}</h2>
             </div>
-            <p>
-              A CT Junior é uma empresa sem fins lucrativos, formada por alunos do Centro Tecnológico da Universidade Federal do Espírito Santo, que trabalham voluntariamente e buscam promover o empreendedorismo no ecossistema capixaba e impactar a sociedade por meio de projetos de excelência com o melhor custo-benefício.
-              <br/>
-              <br/>
-              Fundada em 1993, e federada em 2008 pela Juniores. Atuamos no mercado há 26 anos e nossa carta de serviços engloba as áreas de consultoria empresarial, construção civil e tecnologia da informação. Todo o valor adquirido pela empresa é revertido em investimentos para a formação profissional dos nossos membros e alunos da UFES.
-            </p>
-            <img src="./images/fotoKamikaze.png" alt="Foto dos funcionários da empresa" />
+            <p dangerouslySetInnerHTML={{__html: dados.content}} ></p>
+            
+            <img src={`${process.env.NEXT_PUBLIC_STRAPI_API_URL}${dados.image.url}`} alt={dados.image.altText}/> 
           </div>  
         </section>
 
         <section className={Styles.ourAwardsContainer}>
           <div className={Styles.ourAwardsContent}>
             <div className={Styles.ourAwardsTitle}>
-              <h2>Nossa premiações</h2>
+              <h2>{dados.title2}</h2>
             </div>
-            <ul>
-              <li>Em 2015 ganhamos o prêmio de melhor case no Encontro Nacional de Empresas Juniores;</li>
-              <li>Em 2016, pela nossa federação Juniores, ganhamos o prêmio de Impacto na Rede;</li>
-              <li>Em 2018 voltamos a ser a empresa Impacto na Rede, mas dessa vez levamos também o prêmio de Vendedor do Ano;</li>
-              <li>Em 2020, conquistamos os títulos de Alto Crescimento e Conectada;</li>
-              <li>Em 2021, fomos reconhecidos no Evento Nacional de Empresas Juniores e ainda pretendemos alcançar vôos mais altos.</li>
-            </ul>
-
-            <img src="./images/imagemPremio.png" alt="Prêmio recebido pela empresa" />
+            <ul dangerouslySetInnerHTML={{__html: dados.content2}}></ul>
+            <img src={`${process.env.NEXT_PUBLIC_STRAPI_API_URL}${dados.image2.url}`} alt={dados.image2.altText} />
           </div>
         </section>
 
         <section className={Styles.ourBelievingsContainer}>
           <div className={Styles.ourBelievingsContent}>
             <div className={Styles.ourBelievingsTitle}>
-              <h2>No que acreditamos</h2>
+              <h2>{dados.title3}</h2>
             </div>
-            <div className={Styles.ourBelievingsTopics}>
-              <h2>Missão</h2>
-              <p>Executar projetos de excelência para nossos clientes, contribuindo com o desenvolvimento dos estudantes do centro tecnológico por meio da vivência empresarial.</p>
-
-              <h2>Visão</h2>
-              <p>Ser uma empresa referência no mercado brasileiro, formando jovens líderes empreendedores que geram grandes resultados por meio dos seus projetos de excelência.</p>
-
-              <h2>Propósito</h2>
-              <p>Transformar pessoas em líderes empreendedores de valores sólidos que são capazes e comprometidos em impactar a sociedade.</p>
+            <div className={Styles.ourBelievingsTopics} dangerouslySetInnerHTML={{__html: dados.content3}}>
+              
             </div>
           </div>
         </section>
@@ -70,7 +93,13 @@ const SobreNosPage: NextPage = () => {
             </div>
 
             <div className={Styles.ourValuesTopics}>
-              <img src="./images/focoResultados.svg" alt="Icone Foco em Resultados" />
+              {dados.ourValues.map(valores => (
+                <div key={valores.id}>
+                  <img src={`${process.env.NEXT_PUBLIC_STRAPI_API_URL}${valores.image.data.attributes.url}`} alt="Icone Foco em Resultados" />
+                  <p><b>{valores.title}:</b> {valores.description}.</p>
+                </div>
+              ))}
+              {/* <img src="./images/focoResultados.svg" alt="Icone Foco em Resultados" />
               <p><b>Foco em resultados:</b> Buscamos incessantemente a geração de valor para nossos clientes, com foco na qualidade, satisfação e no desenvolvimento de nossos produtos e colaboradores.</p>
 
               <img src="./images/espiritoDono.svg" alt="Icone Espirito de Dono" />
@@ -83,7 +112,7 @@ const SobreNosPage: NextPage = () => {
               <p><b>Profissionalismo:</b> Agimos com ética, responsabilidade e comprometimento com nossos resultados.</p>
 
               <img src="./images/feedback.svg" alt="Icone Feedback" />
-              <p><b>Feedback:</b> Praticamos com transparência a comunicação, buscando sempre o crescimento mútuo.</p>
+              <p><b>Feedback:</b> Praticamos com transparência a comunicação, buscando sempre o crescimento mútuo.</p> */}
             </div>
           </div>
         </section>
@@ -94,4 +123,36 @@ const SobreNosPage: NextPage = () => {
   );
 };
 
-export default SobreNosPage;
+export async function getStaticProps() {
+  const dadosRes = await fetchAPI("/sobre");
+
+
+  const dados =  {
+    title: dadosRes.data.attributes.title,
+    content: dadosRes.data.attributes.content,
+    image: {
+      url: dadosRes.data.attributes.image.data.attributes.url,
+      altText: dadosRes.data.attributes.image.data.attributes.alternativeText,
+    },
+    title2: dadosRes.data.attributes.title2,
+    content2: dadosRes.data.attributes.content2,
+    image2: {
+      url: dadosRes.data.attributes.image2.data.attributes.url,
+      altText: dadosRes.data.attributes.image2.data.attributes.alternativeText,
+    },
+    title3: dadosRes.data.attributes.title3,
+    content3: dadosRes.data.attributes.content3,
+    ourValues: dadosRes.data.attributes.valores,
+  }
+
+  return {
+    props: {
+      dados,
+    },
+    revalidate: 1,
+  }
+
+}
+
+
+

@@ -83,6 +83,21 @@
         bottom: 0;
         left: 0.469rem;
       }
+
+      span{
+        position: absolute;
+        bottom: 0;
+        left: 4.648rem;
+
+        background-color: var(--orange-200);
+        border-bottom-right-radius: 70%;
+
+        width: 0.143rem;
+        height: 0.143rem;
+
+
+        
+      }
     }
 
     .servicesCard {
@@ -204,6 +219,21 @@
         bottom: 0;
         left: 0.469rem;
       }
+
+      span{
+        position: absolute;
+        bottom: 0;
+        left: 4.648rem;
+
+        background-color: var(--orange-200);
+        border-bottom-right-radius: 70%;
+        
+        width: 0.143rem;
+        height: 0.143rem;
+
+
+        
+      }
     }
 
     p {
@@ -281,6 +311,20 @@
       bottom: 0;
       left: 0.469rem;
     }
+    span{
+      position: absolute;
+      bottom: 0;
+      left: 4.648rem;
+
+      background-color: var(--orange-200);
+      border-bottom-right-radius: 70%;
+      
+      width: 0.143rem;
+      height: 0.143rem;
+
+
+      
+    }
   }
 
   .partnersCarrousel {
@@ -335,6 +379,18 @@
       position: absolute;
       bottom: 0;
       left: 0.469rem;
+    }
+
+    span{
+      position: absolute;
+      bottom: 0;
+      left: 4.648rem;
+
+      background-color: var(--orange-200);
+      border-bottom-right-radius: 70%;
+      
+      width: 0.143rem;
+      height: 0.143rem;
     }
   }
 }

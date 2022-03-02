@@ -1,13 +1,9 @@
-import { NextPage } from "next";
 import Head from "next/head";
 
-import { Header } from "../components/Header";
 import { TellUsForm } from "../components/TellUsForm";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
-
-
 
 // Import Swiper styles
 import 'swiper/css';
@@ -16,9 +12,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 import Styles from "../styles/home.module.scss";
-import { Footer } from "../components/Footer";
 
-const IndexPage: NextPage = () => {
+
+export default function IndexPage(){
   return (
     <>
       <Head>
@@ -108,4 +104,3 @@ const IndexPage: NextPage = () => {
   );
 };
 
-export default IndexPage;

@@ -1,11 +1,8 @@
-import { NextPage } from "next";
 import Head from "next/head";
 
 import Styles from "../styles/sobrenos.module.scss";
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
 
-const SobreNosPage: NextPage = () => {
+export default function SobreNos(){
   return (
     <>
       <Head>
@@ -93,5 +90,3 @@ const SobreNosPage: NextPage = () => {
     </>
   );
 };
-
-export default SobreNosPage;

@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import { TellUsForm } from "../components/TellUsForm";
+import { TitleOrange } from "../components/TitleOrange";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
@@ -30,9 +31,7 @@ export default function IndexPage(){
         </section>
         <section className={Styles.servicesSection}>
           <div className={Styles.servicesContent}>
-            <div className={Styles.servicesTitle}>
-              <h2>Nossos Serviços</h2>
-            </div>
+            <TitleOrange>Nosso Serviços</TitleOrange>
             <div className={Styles.servicesCard}>
               <img src="./images/logoTecnologia.svg" alt="" />
               <h3>TECNOLOGIA</h3>
@@ -59,9 +58,7 @@ export default function IndexPage(){
         </section>
         <section className={Styles.whyCtjuniorSection}>
             <div className={Styles.whyCtjuniorContent}>
-                <div className={Styles.whyCtjuniorTitle}> 
-                    <h2>Por que a CT Junior</h2>
-                </div>
+                <TitleOrange>Por que a CT Junior</TitleOrange>
                 <p>Entendemos suas necessidades e construímos seus sonhos a partir de nossos projetos.</p>
                 <ul>
                     <li>Somos uma instituição sem fins lucrativos, formada por jovens voluntários da maior universidade do Espírito Santo, e oferecemos serviço de excelência com ótimo custo benefício.</li>
@@ -72,9 +69,7 @@ export default function IndexPage(){
             </div>
         </section>
         <section className={Styles.partnersSection}>
-            <div className={Styles.partnersTitle}>
-                <h2>Nossos Parceiros</h2>
-            </div>
+            <TitleOrange>Nossos Parceiros</TitleOrange>
             <Swiper
               className={Styles.partnersCarrousel}
               modules={[Autoplay]}     
@@ -93,9 +88,7 @@ export default function IndexPage(){
             </Swiper>
         </section>
         <section className={Styles.contactUs}>
-          <div className={Styles.contactUsTitle}>
-            <h2>Nos conte sua ideia!</h2>
-          </div>
+          <TitleOrange>Nos conte sua ideia!</TitleOrange>
           <TellUsForm/>      
         </section>
       </main>

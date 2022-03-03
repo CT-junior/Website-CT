@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import { TitleOrange } from "../components/TitleOrange";
+
 import Styles from "../styles/sobrenos.module.scss";
 
 export default function SobreNos(){
@@ -12,9 +14,7 @@ export default function SobreNos(){
       <main>
         <section className={Styles.aboutUsContainer}>
           <div className={Styles.aboutUsContent}>
-            <div className={Styles.aboutUsTitle}>
-              <h2>Um pouco sobre nós</h2>
-            </div>
+            <TitleOrange>Um pouco sobre nós</TitleOrange>
             <p>
               A CT Junior é uma empresa sem fins lucrativos, formada por alunos do Centro Tecnológico da Universidade Federal do Espírito Santo, que trabalham voluntariamente e buscam promover o empreendedorismo no ecossistema capixaba e impactar a sociedade por meio de projetos de excelência com o melhor custo-benefício.
               <br/>
@@ -27,9 +27,7 @@ export default function SobreNos(){
 
         <section className={Styles.ourAwardsContainer}>
           <div className={Styles.ourAwardsContent}>
-            <div className={Styles.ourAwardsTitle}>
-              <h2>Nossa premiações</h2>
-            </div>
+            <TitleOrange>Nossa premiações</TitleOrange>
             <ul>
               <li>Em 2015 ganhamos o prêmio de melhor case no Encontro Nacional de Empresas Juniores;</li>
               <li>Em 2016, pela nossa federação Juniores, ganhamos o prêmio de Impacto na Rede;</li>
@@ -44,9 +42,7 @@ export default function SobreNos(){
 
         <section className={Styles.ourBelievingsContainer}>
           <div className={Styles.ourBelievingsContent}>
-            <div className={Styles.ourBelievingsTitle}>
-              <h2>No que acreditamos</h2>
-            </div>
+            <TitleOrange>No que acreditamos</TitleOrange>
             <div className={Styles.ourBelievingsTopics}>
               <h2>Missão</h2>
               <p>Executar projetos de excelência para nossos clientes, contribuindo com o desenvolvimento dos estudantes do centro tecnológico por meio da vivência empresarial.</p>
@@ -62,10 +58,7 @@ export default function SobreNos(){
 
         <section className={Styles.ourValuesContainer}>
           <div className={Styles.ourValuesContent}>
-            <div className={Styles.ourValuesTitle}>
-              <h2>Nossos valores</h2>
-            </div>
-
+            <TitleOrange>Nossos valores</TitleOrange>
             <div className={Styles.ourValuesTopics}>
               <img src="./images/focoResultados.svg" alt="Icone Foco em Resultados" />
               <p><b>Foco em resultados:</b> Buscamos incessantemente a geração de valor para nossos clientes, com foco na qualidade, satisfação e no desenvolvimento de nossos produtos e colaboradores.</p>

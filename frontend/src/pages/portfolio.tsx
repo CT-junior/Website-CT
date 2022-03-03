@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import { TitleOrange } from "../components/TitleOrange";
+
 import Styles from "../styles/portfolio.module.scss";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -21,9 +23,7 @@ export default function Portifolio() {
       <main>
         <section className={Styles.ourWorksSection}>
           <div className={Styles.ourWorksContent}>
-            <div className={Styles.ourWorksTitle}>
-              <h2>Nossos Trabalhos</h2>
-            </div>
+            <TitleOrange>Nossos Trabalhos</TitleOrange>
             <p>
               Confira alguns projetos que já produzimos! É a melhor maneira de
               nos conhecer e se inspirar.

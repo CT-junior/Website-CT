@@ -41,50 +41,6 @@
     align-items: center;
     justify-content: center;
 
-    .servicesTitle {
-      width: 100%;
-      position: relative;
-      margin-top: 1.25rem;
-
-      h2 {
-        font-family: PT Sans Narrow, sans-serif;
-        font-size: 1.25rem;
-        font-weight: 700;
-        text-transform: uppercase;
-
-        background-image: linear-gradient(
-          90deg,
-          var(--orange-100),
-          var(--orange-200)
-        );
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-      &::before {
-        content: "";
-        background-color: var(--orange-100);
-        height: 0.143rem;
-        width: 0.357rem;
-
-        position: absolute;
-        bottom: 0;
-      }
-      &::after {
-        content: "";
-        background-image: linear-gradient(
-          90deg,
-          var(--orange-100),
-          var(--orange-200)
-        );
-        height: 0.143rem;
-        width: 4.179rem;
-
-        position: absolute;
-        bottom: 0;
-        left: 0.469rem;
-      }
-    }
-
     .servicesCard {
       width: 100%;
       background-color: var(--gray-100);
@@ -161,51 +117,6 @@
     align-items: center;
     justify-content: center;
 
-    .whyCtjuniorTitle {
-      width: 100%;
-      position: relative;
-      margin-top: 1.25rem;
-
-      h2 {
-        font-family: PT Sans Narrow, sans-serif;
-        font-size: 1.25rem;
-        font-weight: 700;
-        text-transform: uppercase;
-
-        background-image: linear-gradient(
-          90deg,
-          var(--orange-100),
-          var(--orange-200)
-        );
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 0.15rem;
-      }
-      &::before {
-        content: "";
-        background-color: var(--orange-100);
-        height: 0.143rem;
-        width: 0.357rem;
-
-        position: absolute;
-        bottom: 0;
-      }
-      &::after {
-        content: "";
-        background-image: linear-gradient(
-          90deg,
-          var(--orange-100),
-          var(--orange-200)
-        );
-        height: 0.143rem;
-        width: 4.179rem;
-
-        position: absolute;
-        bottom: 0;
-        left: 0.469rem;
-      }
-    }
-
     p {
       font-size: 0.75rem;
       font-weight: 500;
@@ -239,50 +150,6 @@
 }
 
 .partnersSection {
-  .partnersTitle {
-    position: relative;
-    margin: 4.375rem auto 0 auto;
-    width: 69.72vw;
-
-    h2 {
-      font-family: PT Sans Narrow, sans-serif;
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-
-      background-image: linear-gradient(
-        90deg,
-        var(--orange-100),
-        var(--orange-200)
-      );
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    &::before {
-      content: "";
-      background-color: var(--orange-100);
-      height: 0.143rem;
-      width: 0.357rem;
-
-      position: absolute;
-      bottom: 0;
-    }
-    &::after {
-      content: "";
-      background-image: linear-gradient(
-        90deg,
-        var(--orange-100),
-        var(--orange-200)
-      );
-      height: 0.143rem;
-      width: 4.179rem;
-
-      position: absolute;
-      bottom: 0;
-      left: 0.469rem;
-    }
-  }
-
   .partnersCarrousel {
     margin-top: 1.25rem;
     margin-left: 15.14vw;
@@ -290,51 +157,5 @@
 
   img {
     height: 3.3rem;
-  }
-}
-
-.contactUs {
-  .contactUsTitle {
-    position: relative;
-    margin: 3.438rem auto 0 auto;
-    width: 69.72vw;
-
-    h2 {
-      font-family: PT Sans Narrow, sans-serif;
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-
-      background-image: linear-gradient(
-        90deg,
-        var(--orange-100),
-        var(--orange-200)
-      );
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    &::before {
-      content: "";
-      background-color: var(--orange-100);
-      height: 0.143rem;
-      width: 0.357rem;
-
-      position: absolute;
-      bottom: 0;
-    }
-    &::after {
-      content: "";
-      background-image: linear-gradient(
-        90deg,
-        var(--orange-100),
-        var(--orange-200)
-      );
-      height: 0.143rem;
-      width: 4.179rem;
-
-      position: absolute;
-      bottom: 0;
-      left: 0.469rem;
-    }
   }
 }

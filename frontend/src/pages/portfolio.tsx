@@ -12,6 +12,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { Carousel } from "../components/Carousel";
 
 export default function Portifolio() {
   return (
@@ -30,39 +31,19 @@ export default function Portifolio() {
             </p>
             <div className={Styles.contentCards}>
                 <h3>TECNOLOGIA</h3>
-                <Swiper
-                    className={Styles.carouselCards}
-                    modules={[Autoplay]}     
-                    spaceBetween={18}
-                    slidesPerView={2.5}
-                    loop={true}
-                    autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false
-                    }}
-                >
-                    <SwiperSlide className={Styles.card}><img src="/images/dualEng.png" alt="" /></SwiperSlide>
+                <Carousel>
+                <SwiperSlide className={Styles.card}><img src="/images/dualEng.png" alt="" /></SwiperSlide>
                     <SwiperSlide className={Styles.card}><img src="/images/sindpes.png" alt="" /></SwiperSlide>
                     <SwiperSlide className={Styles.card}><img src="/images/eurolog.png" alt="" /></SwiperSlide>
-                </Swiper>
+                </Carousel>
             </div>
             <div className={Styles.contentCards}>
                 <h3>CONSTRUÇÃO CIVIL</h3>
-                <Swiper
-                    className={Styles.carouselCards}
-                    modules={[Autoplay]}     
-                    spaceBetween={18}
-                    slidesPerView={2.5}
-                    loop={true}
-                    autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false
-                    }}
-                >
-                    <SwiperSlide className={Styles.card}><img src="/images/dualEng.png" alt="" /></SwiperSlide>
+                <Carousel>
+                <SwiperSlide className={Styles.card}><img src="/images/dualEng.png" alt="" /></SwiperSlide>
                     <SwiperSlide className={Styles.card}><img src="/images/sindpes.png" alt="" /></SwiperSlide>
                     <SwiperSlide className={Styles.card}><img src="/images/eurolog.png" alt="" /></SwiperSlide>
-                </Swiper>
+                </Carousel>
             </div>     
           </div>
         </section>

@@ -17,28 +17,21 @@
       margin-bottom: 1.75rem;
     }
 
-    .contentCards{
-        width: 100vw;
-        
-        h3{
-            font-size: 1rem;
-            color: var(--green-200);
-            text-align: left;
-            margin-left: 15.14vw;
-        }
+    .contentCards {
+      width: 100vw;
 
-        .carouselCards{
-            display: flex;
-            flex-direction: row;
-            margin-left: 15.14vw;
-            margin-top:0.875rem;
-            padding-bottom: 1rem;
-            img{
-                width: 6.436rem!important;
-                height: 6.436rem!important;
-                box-shadow: 0.109rem 0.109rem 0.547rem 0 rgba(0, 0, 0, 0.25);
-            }
-        }
+      h3 {
+        font-size: 1rem;
+        color: var(--green-200);
+        text-align: left;
+        margin-left: 15.14vw;
+      }
+
+      img {
+        width: 6.436rem !important;
+        height: 6.436rem !important;
+        box-shadow: 0.1rem 0.1rem 0.875rem 0 rgba(0, 0, 0, 0.25);
+      }
     }
   }
 }

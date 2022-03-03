@@ -3,14 +3,8 @@ import Head from "next/head";
 import { TellUsForm } from "../components/TellUsForm";
 import { TitleOrange } from "../components/TitleOrange";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import { Carousel } from "../components/Carousel";
+import { SwiperSlide } from 'swiper/react';
 
 import Styles from "../styles/home.module.scss";
 
@@ -70,22 +64,11 @@ export default function IndexPage(){
         </section>
         <section className={Styles.partnersSection}>
             <TitleOrange>Nossos Parceiros</TitleOrange>
-            <Swiper
-              className={Styles.partnersCarrousel}
-              modules={[Autoplay]}     
-              spaceBetween={18}
-              slidesPerView={2.2}
-              loop={true}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false
-                }}
-            >
+            <Carousel>
               <SwiperSlide><img src="/images/rocketseatLogo.png" alt="" /></SwiperSlide>
               <SwiperSlide><img src="/images/ufesLogo.png" alt="" /></SwiperSlide>
               <SwiperSlide><img src="/images/americanasLogo.png" alt="" /></SwiperSlide>
-              
-            </Swiper>
+            </Carousel>
         </section>
         <section className={Styles.contactUs}>
           <TitleOrange>Nos conte sua ideia!</TitleOrange>

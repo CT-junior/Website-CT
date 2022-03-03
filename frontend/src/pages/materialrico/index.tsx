@@ -1,11 +1,16 @@
-import Styles from "./styles.module.scss";
+import Head from "next/head";
 
 import { TitleOrange } from "../../components/TitleOrange";
 import { ButtonOrange } from "../../components/ButtonOrange";
 
+import Styles from "./styles.module.scss";
 export default function MaterialRico() {
   return (
     <main>
+       <Head>
+        <title>Material Rico 
+          | CT JUNIOR</title>
+      </Head>
       <section className={Styles.container}>
         <TitleOrange>MATERIAL RICO</TitleOrange>
         <p>Aproveite nosso contúdo gratuito disponível para download</p>

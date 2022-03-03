@@ -1,4 +1,4 @@
-import Styles from "./style.module.scss";
+import Styles from "./styles.module.scss";
 
 import { Swiper} from 'swiper/react';
 import { Autoplay } from 'swiper';

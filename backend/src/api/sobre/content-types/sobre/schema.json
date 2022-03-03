@@ -12,15 +12,44 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "hero": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
       "type": "media",
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos"
+        "images"
       ]
+    },
+    "title2": {
+      "type": "string"
+    },
+    "content2": {
+      "type": "richtext"
+    },
+    "image2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title3": {
+      "type": "string"
+    },
+    "content3": {
+      "type": "richtext"
+    },
+    "valores": {
+      "type": "component",
+      "repeatable": true,
+      "component": "card.card"
     }
   }
 }

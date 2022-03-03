@@ -1,4 +1,4 @@
-import Styles from './style.module.scss'
+import Styles from './styles.module.scss'
 
 type Props = {
     children: React.ReactNode

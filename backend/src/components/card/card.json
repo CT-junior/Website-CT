@@ -2,22 +2,21 @@
   "collectionName": "components_card_cards",
   "info": {
     "displayName": "card",
-    "icon": "address-card"
+    "icon": "address-card",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "unique": false
     },
     "description": {
       "type": "text"
     },
     "image": {
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ],
       "type": "media",
       "multiple": false

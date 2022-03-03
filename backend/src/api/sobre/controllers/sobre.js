@@ -1,9 +1,7 @@
 'use strict';
 
-/**
- *  sobre controller
- */
+const collectionType = 'sobre'
+const schema = require(`../content-types/${collectionType}/schema.json`);
+const createPopulatedController = require("../../../helpers/populate");
 
-const { createCoreController } = require('@strapi/strapi').factories;
-
-module.exports = createCoreController('api::sobre.sobre');
+module.exports = createPopulatedController(`api::${collectionType}.${collectionType}`, schema);

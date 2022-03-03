@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import { TellUsForm } from "../components/TellUsForm";
 import { TitleOrange } from "../components/TitleOrange";
+import { ButtonOrange } from "../components/ButtonOrange";
 
 import { Carousel } from "../components/Carousel";
 import { SwiperSlide } from 'swiper/react';
@@ -45,9 +46,7 @@ export default function IndexPage(){
                 imóveis.
               </p>
             </div>
-            <button className={Styles.requestDiagnosis}>
-              Solicitar um Diagnóstico
-            </button>
+            <ButtonOrange>Solicitar um Diagnóstico</ButtonOrange>
           </div>
         </section>
         <section className={Styles.whyCtjuniorSection}>

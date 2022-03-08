@@ -8,6 +8,7 @@ import { Carousel } from "../components/Carousel";
 import { SwiperSlide } from 'swiper/react';
 
 import Styles from "../styles/home.module.scss";
+import { WhatsappButton } from "../components/WhatsappButton";
 
 
 export default function IndexPage(){

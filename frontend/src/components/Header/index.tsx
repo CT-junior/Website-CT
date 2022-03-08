@@ -22,6 +22,7 @@ export function Header(){
                 </div>
                 <div className={`${Styles.menuContent} ${menuOpen == true ? Styles.menuContentShow : ''}`}>
                     <nav onClick={()=>{setMenuOpen(false)}}>
+                        <Link href='/'><a>Início</a></Link>
                         <Link href='/servicos'><a>Serviços</a></Link>
                         <Link href='/sobrenos'><a>Quem Somos</a></Link>
                         <Link href='/portfolio'><a>Portfólio</a></Link>

@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import useWindowDimensions from "../../Hooks/useWindowDimensions";
 
 
 type Props = {
@@ -15,12 +16,14 @@ type Props = {
 };
 
 export function Carousel({ children }: Props) {
+  const { width } = useWindowDimensions();
+
   return (
     <Swiper
       className={Styles.carousel}
       modules={[Autoplay]}
       spaceBetween={18}
-      slidesPerView={2.5}
+      slidesPerView={width/400}
       loop={true}
       autoplay={{
         delay: 2500,

@@ -5,15 +5,19 @@ import { Footer } from '../components/Footer'
 
 import '../styles/global.scss'
 import { WhatsappButton } from '../components/WhatsappButton'
+import Head from 'next/head'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  
-  return  (
+
+  return (
     <>
+      <Head>
+        <title>CT JUNIOR</title>
+      </Head>
       <Header />
       <WhatsappButton number={"27998422438"} />
       <Component {...pageProps} />
-      <Footer/>
+      <Footer />
     </>
   )
 }

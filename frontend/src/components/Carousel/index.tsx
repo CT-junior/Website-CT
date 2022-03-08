@@ -9,6 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import useWindowDimensions from "../../Hooks/useWindowDimensions";
+import { useEffect } from "react";
 
 
 type Props = {

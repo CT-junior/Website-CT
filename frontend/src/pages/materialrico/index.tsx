@@ -19,7 +19,29 @@ export default function MaterialRico() {
             <span>Indicadores Financeiros: dicas para implementar em sua empresa</span>
             <ButtonOrange> Baixar</ButtonOrange>
         </div>
+        <div className={Styles.materialCard}>
+            <img src="/images/materialRico.png" alt="" />
+            <span>Conheça o E-commerce feito pela CT</span>
+            <ButtonOrange> Baixar</ButtonOrange>
+        </div>
+        <div className={Styles.materialCard}>
+            <img src="/images/materialRico.png" alt="" />
+            <span>Entendendo as etapas de um projeto elétrico</span>
+            <ButtonOrange> Baixar</ButtonOrange>
+        </div>
+        <div className={Styles.materialCard}>
+            <img src="/images/materialRico.png" alt="" />
+            <span>Planejamento estratégico: alcance resultados incríveis com essa ferramenta</span>
+            <ButtonOrange> Baixar</ButtonOrange>
+        </div>
+        <div className={Styles.materialCard}>
+            <img src="/images/plangastos.png" alt="" />
+            <span>Planilha de gestão de gastos</span>
+            <ButtonOrange> Baixar</ButtonOrange>
+        </div>
+        
       </section>
+      
     </main>
   );
 }

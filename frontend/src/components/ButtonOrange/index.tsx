@@ -1,12 +1,13 @@
 import Styles from './styles.module.scss'
 
-type Props = {
+
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>  {
     children: React.ReactNode
 }
 
-export function ButtonOrange({children} : Props){
+export function ButtonOrange({children, ...props} : ButtonProps){
     return(
-        <button className={Styles.button}>
+        <button className={Styles.button} {...props}>
             {children}
         </button>
     )

@@ -19,7 +19,7 @@
     }
 
     .contentCards {
-      width: 100vw;
+      width: 98.5vw;
       margin-bottom: 0.375rem;
       h3 {
         font-size: 1rem;
@@ -36,55 +36,4 @@
       }
     }
   }
-}
-
-.modalContainer {
-
-  z-index: 3;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.modalContent {
-  position: relative;
-  width: 84.72vw;
-  position: absolute;
-  top: 7.813rem;
-  left: 7.64vw;
-  
-  border: 1px solid #ccc;
-  background: var(--gray-150);
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  border-radius: 0.625rem;
-  outline: none;
-  padding:  0 2.25rem;
-
-  :first-child{
-    width: 12.5rem;
-    margin-bottom: 1.25rem;
-  }
-
-  .iconClose{
-    cursor: pointer;
-    position: absolute;
-    top: 1.125rem;
-    right: 1.375rem; 
-  }
-  :last-child{
-    p{
-      width: 100%;
-      padding: 0 0.438rem;
-
-      font-size: 0.75rem;
-      line-height: 1rem;
-      text-align: justify;     
-      
-      
-    }
-  }
-
 }

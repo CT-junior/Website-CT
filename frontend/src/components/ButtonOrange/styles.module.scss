@@ -9,13 +9,25 @@
   background-image: linear-gradient(
     90deg,
     var(--orange-100),
-    var(--orange-200)
+    var(--orange-200) 50%
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
   border: 0.175rem solid;
   border-radius: 0.25rem;
-  border-image: linear-gradient(90deg, var(--orange-100), var(--orange-200));
+  border-image: linear-gradient(90deg, var(--orange-100), var(--orange-200) 50%);
   border-image-slice: 2;
+}
+
+@media screen and(min-width:1200px){
+  .button{
+    padding: 0.625rem 0.938rem;
+    font-size: 1.25rem;
+    margin: 0 auto;
+
+    &:hover{
+      filter: brightness(1.1);
+    }
+  }
 }

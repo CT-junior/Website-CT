@@ -25,29 +25,38 @@ export default function IndexPage(){
             <br />
             <b>Tecnologia Construção Civil</b>
           </h1>
+          <ButtonOrange>Solicitar um Diagnóstico</ButtonOrange>
         </section>
         <section className={Styles.servicesSection}>
           <div className={Styles.servicesContent}>
             <TitleOrange>Nosso Serviços</TitleOrange>
-            <div className={Styles.servicesCard}>
-              <img src="./images/logoTecnologia.svg" alt="" />
-              <h3>TECNOLOGIA</h3>
-              <p>
-                Desenvolvemos sites institucionais, e-commerces e sistemas web
-                com suporte a todos os dispositivos móveis. Trabalhamos também
-                com protótipos de aplicativos.
-              </p>
+            <p>Desenvolvemos soluções sob medida. É assim que vamos te ajudar</p>
+            <div className={Styles.servicesCards}>
+              <div className={Styles.servicesCard}>
+                <div className={Styles.headerCard}>
+                  <img src="./images/logoTecnologia.svg" alt="" />
+                  <h3>TECNOLOGIA</h3>
+                </div>
+                <p>
+                  Desenvolvemos sites institucionais, e-commerces e sistemas web
+                  com suporte a todos os dispositivos móveis. Trabalhamos também
+                  com protótipos de aplicativos.
+                </p>
+              </div>
+              <div className={Styles.servicesCard}>
+                <div className={Styles.headerCard}>
+                  <img src="./images/logoEngenharia.svg" alt="" />
+                  <h3>CONSTRUÇÃO CIVIL</h3>
+                </div>
+                <p>
+                  Realizamos projetos elétricos, arquitetônicos e
+                  hidrossanitários, projetos de piscina e de captação de água da
+                  chuva. Trabalhamos também com e regularização, usucapião de
+                  imóveis.
+                </p>
+              </div>
             </div>
-            <div className={Styles.servicesCard}>
-              <img src="./images/logoEngenharia.svg" alt="" />
-              <h3>CONSTRUÇÃO CIVIL</h3>
-              <p>
-                Realizamos projetos elétricos, arquitetônicos e
-                hidrossanitários, projetos de piscina e de captação de água da
-                chuva. Trabalhamos também com e regularização, usucapião de
-                imóveis.
-              </p>
-            </div>
+
             <ButtonOrange>Solicitar um Diagnóstico</ButtonOrange>
           </div>
         </section>

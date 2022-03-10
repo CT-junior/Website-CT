@@ -13,7 +13,7 @@
 
   h1 {
     color: var(--white);
-    font-family: PT Sans Narrow, sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -29,17 +29,25 @@
       font-weight: 900;
     }
   }
+
+  > :last-child{
+    display: none;
+  }
 }
 
 .servicesSection {
   .servicesContent {
     margin: 0 auto;
     width: 69.72vw;
-
+    max-width: 65.313rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    > p{
+      display: none;
+    }
 
     .servicesCard {
       width: 100%;
@@ -89,6 +97,7 @@
   .whyCtjuniorContent {
     margin: 0 auto;
     width: 69.72vw;
+    max-width: 65.313rem;
 
     display: flex;
     flex-direction: column;
@@ -128,6 +137,8 @@
 }
 
 .partnersSection {
+  max-width: 65.313rem;
+  margin: 0 auto;
   img {
     object-fit: fill;
     width: 100%;
@@ -135,3 +146,150 @@
     border-radius: 0.275rem;
   }
 }
+
+.contactUs{
+  max-width: 65.313rem;
+  margin: 0 auto;
+}
+
+@media screen and(min-width:1200px){
+
+  .sectionInitial{
+    background-image: url("./../../public/images/logoBrancaSimplesDesktop.png");
+    background-size: 17.938rem;
+    background-position: top 6.75rem right 11.875rem;
+
+    position: relative;
+    overflow: hidden;
+
+    height: 30.625rem;
+    align-items: flex-start;
+    border-radius: 0 0 2.5rem 2.5rem ;
+
+
+    h1{
+      width: unset;
+      max-width: 43.75rem;
+      margin-left: 18.05vw;
+
+      position: relative;
+      z-index: 2; 
+
+      font-size: 2.25rem;
+      font-weight: 400;
+      text-shadow: 0rem 0.25rem 0.25rem rgba(0,0,0, 0.25);
+      margin-bottom: 2.875rem;
+      
+      b{
+        margin-top: 0.8rem;
+        width: 100%;
+        font-size: 4.375rem;
+        line-height: 6.25rem;
+      }
+    }
+    
+    &::before{
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.06;
+      background-image: url('../../public/images/textura.jfif');
+      background-repeat: repeat;
+      background-position: 50% 0;
+      background-size: cover;
+    }
+
+    > :last-child{
+      display: unset;
+      z-index: 2;
+
+    }
+  }
+
+  .servicesSection{
+    .servicesContent{ 
+      > p{
+
+        display: unset;
+        margin: 0.938rem auto 0 0;
+        width: 17.5rem;
+
+        font-size: 0.938rem;
+        font-weight: 500;
+
+      }
+      .servicesCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.188rem;
+
+        margin-top: 2.938rem;
+
+        .servicesCard{
+          margin-top: 0;
+          padding: 2.125rem 1.75rem 2.125rem 2rem;
+          
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+
+          max-width: 28.75rem;
+
+          border-radius: 0.438rem;
+
+          position: relative;
+          overflow: hidden;
+
+          .headerCard{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            gap: 0.313rem;
+
+            h3{
+              font-size: 1.042rem;
+              margin-top: 0;
+            }
+          }
+
+          p{
+            font-size: 0.938rem;
+            margin-top: 0;
+          }
+
+          img{
+            width: 4.375rem;
+          }
+
+          &::before{
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.06;
+            background-image: url('../../public/images/textura.jfif');
+            background-repeat: repeat;
+            background-position: 50% 0;
+            background-size: cover;
+          }
+        }
+      }
+
+      > :last-child{
+        display: none;
+      }
+    }
+  }
+}
+

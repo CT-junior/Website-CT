@@ -7,8 +7,9 @@ import { useRouter } from 'next/router';
 export function Header() {
 
     const [menuOpen, setMenuOpen] = useState(false);
+    
     const query = useRouter().asPath.replace('/', '');
-    console.log(query)
+
     return (
         <header className={Styles.headerContainer}>
             <div className={Styles.headerContent}>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ButtonOrange } from "../ButtonOrange";
 import Styles from "./styles.module.scss";
 
 export function TellUsForm() {
@@ -55,9 +56,10 @@ export function TellUsForm() {
         
         <label htmlFor="ideia">Descreva sua ideia :)</label>
         <textarea id="ideia"></textarea>
-        
-        <button type="submit">Ok, enviar!</button>
+        <ButtonOrange type="submit">Ok, enviar!</ButtonOrange>
       </fieldset>
+      
     </form>
+    
   );
 }

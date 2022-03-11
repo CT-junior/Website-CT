@@ -153,7 +153,12 @@
 .partnersSection {
   max-width: 65.313rem;
   margin: 0 auto;
-  img {
+
+  .partnersLogos{
+    display: none;
+  }
+
+  > img {
     object-fit: fill;
     width: 100%;
     height: 6rem;
@@ -371,6 +376,30 @@
 
 
 
+    }
+  }
+
+  .partnersSection{
+    margin-top: 4.688rem;
+
+    > :nth-child(2){
+      display: none;
+    }
+
+    .partnersLogos{
+      display: unset;
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      column-gap: 4.625rem;
+      row-gap: 3.75rem;
+
+      margin: 5.625rem 0 4.375rem 0;
+      img{
+        width: auto;
+      }
     }
   }
 }

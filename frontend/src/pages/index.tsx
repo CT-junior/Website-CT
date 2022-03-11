@@ -83,6 +83,13 @@ export default function IndexPage(){
               <SwiperSlide><img src="/images/ufesLogo.png" alt="" /></SwiperSlide>
               <SwiperSlide><img src="/images/americanasLogo.png" alt="" /></SwiperSlide>
             </Carousel>
+            <div className={Styles.partnersLogos}>
+              <img src="/images/rocketseatLogo.png" alt="" />
+              <img src="/images/ufesLogo.png" alt="" />
+              <img src="/images/americanasLogo.png" alt="" />
+              <img src="/images/labLogo.png" alt="" />
+              <img src="/images/servinoLogo.png" alt="" />
+            </div>
         </section>
         <section className={Styles.contactUs}>
           <TitleOrange>Nos conte sua ideia!</TitleOrange>

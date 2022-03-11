@@ -13,7 +13,7 @@
 
   h1 {
     color: var(--white);
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: "PT Sans Narrow", sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -30,7 +30,7 @@
     }
   }
 
-  > :last-child{
+  > :last-child {
     display: none;
   }
 }
@@ -45,7 +45,7 @@
     align-items: center;
     justify-content: center;
 
-    > p{
+    > p {
       display: none;
     }
 
@@ -67,11 +67,7 @@
         font-size: 0.875rem;
         font-weight: 600;
 
-        background-image: linear-gradient(
-          90deg,
-          var(--orange-100),
-          var(--orange-200)
-        );
+        background-image: linear-gradient(90deg, var(--orange-100), var(--orange-200));
         background-clip: text;
         -webkit-text-fill-color: transparent;
 
@@ -87,7 +83,7 @@
       }
     }
 
-    :last-child{
+    :last-child {
       margin-top: 1.375rem;
     }
   }
@@ -97,35 +93,34 @@
   .whyCtjuniorContent {
     max-width: 65.313rem;
     margin: 0 auto;
-    .whyCtjuniorInfo{
+    .whyCtjuniorInfo {
       margin: 0 auto;
       width: 69.72vw;
-      
-  
+
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-  
+
       p {
         font-size: 0.75rem;
         font-weight: 400;
         margin-top: 0.75rem;
         text-align: justify;
       }
-  
+
       ul {
         width: 79.78%;
         max-width: 30.625rem;
         margin-top: 1.625rem;
-  
+
         display: flex;
         flex-direction: column;
         gap: 1.75rem;
-  
+
         list-style-position: outside;
         list-style-image: url("../../public/images/iconBulletedList.svg");
-      
+
         li {
           font-size: 0.75rem;
           font-weight: 400;
@@ -133,7 +128,6 @@
         }
       }
     }
-
 
     img {
       margin-top: 1.5rem;
@@ -143,18 +137,15 @@
     img + img {
       display: none;
       margin-left: auto;
-
     }
-
   }
-
 }
 
 .partnersSection {
   max-width: 65.313rem;
   margin: 0 auto;
 
-  .partnersLogos{
+  .partnersLogos {
     display: none;
   }
 
@@ -166,14 +157,13 @@
   }
 }
 
-.contactUs{
+.contactUs {
   max-width: 65.313rem;
   margin: 0 auto;
 }
 
-@media screen and(min-width:1200px){
-
-  .sectionInitial{
+@media screen and(min-width:1200px) {
+  .sectionInitial {
     background-image: url("./../../public/images/logoBrancaSimplesDesktop.png");
     background-size: 17.938rem;
     background-position: top 6.75rem right 11.875rem;
@@ -183,32 +173,31 @@
 
     height: 30.625rem;
     align-items: flex-start;
-    border-radius: 0 0 2.5rem 2.5rem ;
+    border-radius: 0 0 2.5rem 2.5rem;
 
-
-    h1{
+    h1 {
       width: unset;
       max-width: 43.75rem;
       margin-left: 18.05vw;
 
       position: relative;
-      z-index: 2; 
+      z-index: 2;
 
       font-size: 2.25rem;
       font-weight: 400;
-      text-shadow: 0rem 0.25rem 0.25rem rgba(0,0,0, 0.25);
+      text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
       margin-bottom: 2.875rem;
-      
-      b{
+
+      b {
         margin-top: 0.8rem;
         width: 100%;
         font-size: 4.375rem;
         line-height: 6.25rem;
       }
     }
-    
-    &::before{
-      content: ' ';
+
+    &::before {
+      content: " ";
       display: block;
       position: absolute;
       left: 0;
@@ -217,43 +206,40 @@
       height: 100%;
       z-index: 1;
       opacity: 0.06;
-      background-image: url('../../public/images/textura.jfif');
+      background-image: url("../../public/images/textura.jfif");
       background-repeat: repeat;
       background-position: 50% 0;
       background-size: cover;
     }
 
-    > :last-child{
+    > :last-child {
       display: unset;
       z-index: 2;
-
     }
   }
 
-  .servicesSection{
-    .servicesContent{ 
+  .servicesSection {
+    .servicesContent {
       margin-top: 3.313rem;
-      > p{
-
+      > p {
         display: unset;
         margin: 0.938rem auto 0 0;
         width: 17.5rem;
 
         font-size: 0.938rem;
-
       }
 
-      .servicesCards{
+      .servicesCards {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2.188rem;
 
         margin-top: 2.938rem;
 
-        .servicesCard{
+        .servicesCard {
           margin-top: 0;
           padding: 2.125rem 1.75rem 2.125rem 2rem;
-          
+
           display: flex;
           align-items: center;
           justify-content: center;
@@ -266,30 +252,30 @@
           position: relative;
           overflow: hidden;
 
-          .headerCard{
+          .headerCard {
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
             justify-content: center;
             gap: 0.313rem;
 
-            h3{
+            h3 {
               font-size: 1.042rem;
               margin-top: 0;
             }
           }
 
-          p{
+          p {
             font-size: 0.938rem;
             margin-top: 0;
           }
 
-          img{
+          img {
             width: 4.375rem;
           }
 
-          &::before{
-            content: ' ';
+          &::before {
+            content: " ";
             display: block;
             position: absolute;
             left: 0;
@@ -298,7 +284,7 @@
             height: 100%;
             z-index: 1;
             opacity: 0.06;
-            background-image: url('../../public/images/textura.jfif');
+            background-image: url("../../public/images/textura.jfif");
             background-repeat: repeat;
             background-position: 50% 0;
             background-size: cover;
@@ -306,21 +292,21 @@
         }
       }
 
-      > :last-child{
+      > :last-child {
         display: none;
       }
     }
   }
 
-  .whyCtjuniorSection{
+  .whyCtjuniorSection {
     margin-top: 5.125rem;
     min-height: 29.5rem;
     background-image: linear-gradient(180deg, var(--white), var(--gray-125));
-    
-    .whyCtjuniorContent{
+
+    .whyCtjuniorContent {
       display: flex;
 
-      .whyCtjuniorInfo{
+      .whyCtjuniorInfo {
         margin: 1.438rem auto 1.438rem 0;
         height: 100%;
 
@@ -329,64 +315,56 @@
           width: 22.188rem;
           font-size: 0.938rem;
         }
-      
-        ul{
+
+        ul {
           margin-right: auto;
           margin-left: 3.375rem;
           margin-top: 3.625rem;
           list-style: none;
           text-decoration: none;
           list-style-position: outside;
-          
-          li{
+
+          li {
             position: relative;
             display: inline;
             position: relative;
             font-size: 0.938rem;
 
-            &::before{
-              content: '';
+            &::before {
+              content: "";
               background-image: url("../../public/images/iconBulletedListDesktop.svg");
               width: 25.91px;
               height: 25.91px;
               position: absolute;
-              left: -2.75rem; 
+              left: -2.75rem;
               top: 25%;
-              
             }
-
           }
-          
         }
       }
-      
-      img{
+
+      img {
         display: none;
       }
 
-      img + img{
+      img + img {
         display: unset;
         margin-top: 0;
         max-width: 35.375rem;
         max-height: 29.5rem;
         margin-right: calc((65.313rem - 100vw) / 2);
-
-    }
-
-
-
-
+      }
     }
   }
 
-  .partnersSection{
+  .partnersSection {
     margin-top: 4.688rem;
 
-    > :nth-child(2){
+    > :nth-child(2) {
       display: none;
     }
 
-    .partnersLogos{
+    .partnersLogos {
       display: unset;
 
       display: flex;
@@ -397,10 +375,9 @@
       row-gap: 3.75rem;
 
       margin: 5.625rem 0 4.375rem 0;
-      img{
+      img {
         width: auto;
       }
     }
   }
 }
-

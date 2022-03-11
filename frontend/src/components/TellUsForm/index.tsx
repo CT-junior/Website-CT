@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { ButtonOrange } from "../ButtonOrange";
-import Styles from "./styles.module.scss";
+import styles from "./styles.module.scss";
 
 export function TellUsForm() {
 
@@ -22,7 +22,7 @@ export function TellUsForm() {
   }); 
 
   return (
-    <form action="" className={Styles.tellUsForm}>
+    <form action="" className={styles.tellUsForm}>
       <fieldset>
         <label htmlFor="name">Nome</label>
         <input type="text" name="name" id="name" required />
@@ -40,23 +40,23 @@ export function TellUsForm() {
           <option value="engenharia-civil">Engenharia Civil</option>
         </select>
 
-        <div className={Styles.sliderContainer}>
+        <div className={styles.sliderContainer}>
           <label htmlFor="investimento">Quanto você pretende investir?</label>
-          <div className={Styles.slideField}>
+          <div className={styles.slideField}>
             <input type="range" id="investimento" min="10" max="40.00"  onChange={event =>{setRangeValue(Number(event.target.value))}}  value={rangeValue}/>
-            <div className={Styles.sliderTracinhos}>
+            <div className={styles.sliderTracinhos}>
               <span></span>
               <span></span>
               <span></span>
               <span></span>
             </div>
           </div>
-          <div className={Styles.rangeValue}>{priceRange}</div> 
+          <div className={styles.rangeValue}>{priceRange}</div> 
         </div>
         
         <label htmlFor="ideia">Descreva sua ideia :)</label>
-        <textarea id="ideia"></textarea>
-        <ButtonOrange type="submit">Ok, enviar!</ButtonOrange>
+        <textarea id="ideia" className={styles.ideas}></textarea>
+        <ButtonOrange type="submit" >Ok, enviar!</ButtonOrange>
       </fieldset>
       
     </form>

@@ -80,7 +80,7 @@
 
       p {
         font-size: 0.75rem;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1rem;
 
         margin-top: 1.125rem;
@@ -95,45 +95,59 @@
 
 .whyCtjuniorSection {
   .whyCtjuniorContent {
-    margin: 0 auto;
-    width: 69.72vw;
     max-width: 65.313rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    p {
-      font-size: 0.75rem;
-      font-weight: 500;
-      margin-top: 0.75rem;
-      text-align: justify;
-    }
-
-    ul {
-      width: 79.78%;
-      margin-top: 1.625rem;
-
+    margin: 0 auto;
+    .whyCtjuniorInfo{
+      margin: 0 auto;
+      width: 69.72vw;
+      
+  
       display: flex;
       flex-direction: column;
-      gap: 1.75rem;
-
-      list-style-position: outside;
-      list-style-image: url("../../public/images/iconBulletedList.svg");
-
-      li {
+      align-items: center;
+      justify-content: center;
+  
+      p {
         font-size: 0.75rem;
-        font-weight: 500;
+        font-weight: 400;
+        margin-top: 0.75rem;
         text-align: justify;
       }
+  
+      ul {
+        width: 79.78%;
+        max-width: 30.625rem;
+        margin-top: 1.625rem;
+  
+        display: flex;
+        flex-direction: column;
+        gap: 1.75rem;
+  
+        list-style-position: outside;
+        list-style-image: url("../../public/images/iconBulletedList.svg");
+      
+        li {
+          font-size: 0.75rem;
+          font-weight: 400;
+          text-align: justify;
+        }
+      }
     }
+
 
     img {
       margin-top: 1.5rem;
       width: 98.5vw;
     }
+
+    img + img {
+      display: none;
+      margin-left: auto;
+
+    }
+
   }
+
 }
 
 .partnersSection {
@@ -213,6 +227,7 @@
 
   .servicesSection{
     .servicesContent{ 
+      margin-top: 3.313rem;
       > p{
 
         display: unset;
@@ -220,9 +235,9 @@
         width: 17.5rem;
 
         font-size: 0.938rem;
-        font-weight: 500;
 
       }
+
       .servicesCards{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -289,6 +304,73 @@
       > :last-child{
         display: none;
       }
+    }
+  }
+
+  .whyCtjuniorSection{
+    margin-top: 5.125rem;
+    min-height: 29.5rem;
+    background-image: linear-gradient(180deg, var(--white), var(--gray-125));
+    
+    .whyCtjuniorContent{
+      display: flex;
+
+      .whyCtjuniorInfo{
+        margin: 1.438rem auto 1.438rem 0;
+        height: 100%;
+
+        p {
+          margin: 0.938rem auto 0 0;
+          width: 22.188rem;
+          font-size: 0.938rem;
+        }
+      
+        ul{
+          margin-right: auto;
+          margin-left: 3.375rem;
+          margin-top: 3.625rem;
+          list-style: none;
+          text-decoration: none;
+          list-style-position: outside;
+          
+          li{
+            position: relative;
+            display: inline;
+            position: relative;
+            font-size: 0.938rem;
+
+            &::before{
+              content: '';
+              background-image: url("../../public/images/iconBulletedListDesktop.svg");
+              width: 25.91px;
+              height: 25.91px;
+              position: absolute;
+              left: -2.75rem; 
+              top: 25%;
+              
+            }
+
+          }
+          
+        }
+      }
+      
+      img{
+        display: none;
+      }
+
+      img + img{
+        display: unset;
+        margin-top: 0;
+        max-width: 35.375rem;
+        max-height: 29.5rem;
+        margin-right: calc((65.313rem - 100vw) / 2);
+
+    }
+
+
+
+
     }
   }
 }

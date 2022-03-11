@@ -62,6 +62,7 @@ export default function IndexPage(){
         </section>
         <section className={Styles.whyCtjuniorSection}>
             <div className={Styles.whyCtjuniorContent}>
+              <div className={Styles.whyCtjuniorInfo}>
                 <TitleOrange>Por que a CT Junior</TitleOrange>
                 <p>Entendemos suas necessidades e construímos seus sonhos a partir de nossos projetos.</p>
                 <ul>
@@ -69,8 +70,11 @@ export default function IndexPage(){
                     <li>A CT Junior se encontra no maior Centro Tecnológico do Espírito Santo, contando com apoio de professores e alunos renomados dessa instituição de elite.</li>
                     <li>Estamos há mais de 27 anos no mercado, apresentando soluções para clientes de diversos setores. Todo nosso faturamento é reinvestido na profissionalização dos estudantes voluntários que participam do projeto.</li>
                 </ul>
-                <img src={'/images/studentsWorking.png'} alt="" />
+              </div>
+              <img src={'/images/studentsWorking.png'} alt="" />
+              <img src={'/images/studentsWorkingDesktop.png'} alt="" />
             </div>
+            
         </section>
         <section className={Styles.partnersSection}>
             <TitleOrange>Nossos Parceiros</TitleOrange>

@@ -2,7 +2,7 @@
     width: 100%;
     position: relative;
     max-width: 69.72vw;
-    margin: 1.25rem auto 0 auto;
+    margin:0 auto;
     
     h2 {
       
@@ -52,9 +52,6 @@
 
       width: 0.143rem;
       height: 0.143rem;
-
-
-      
     }
 }
 
@@ -64,6 +61,23 @@
 
     h2{
       font-size: 2.188rem;
+    }
+
+    &::before {
+      height: 0.25rem;
+      width: 0.357rem;
+    }
+    &::after {
+      height: 0.25rem;
+      width: 7.313rem;
+      left: 0.469rem;
+    }
+    span{
+      height: 0.25rem;
+      width: 0.50rem;
+      
+      left: 7.782rem;
+      border-bottom-right-radius: 50%;
     }
   }
 }

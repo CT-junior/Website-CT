@@ -34,8 +34,8 @@ export function TellUsForm() {
         <input type="tel" name="phone" id="phone" required />
 
         <label htmlFor="area">Qual seu interesse?</label>
-        <select name="area" id ="area" required>
-          <option selected disabled value=""></option>
+        <select name="area" id ="area" required defaultValue={'default'}>
+          <option value="default" disabled>Escolha uma opção</option>
           <option value="tecnologia">Tecnologia</option>
           <option value="engenharia-civil">Engenharia Civil</option>
         </select>

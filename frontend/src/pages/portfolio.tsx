@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import { useState } from "react";
+import { useSwiper } from "swiper/react";
 import useWindowDimensions from "../Hooks/useWindowDimensions";
 
 import { TitleOrange } from "../components/TitleOrange";
@@ -45,6 +46,7 @@ const modalDataSample4: ModalData = {
 export default function Portifolio() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalData, setModalData] = useState(modalDataSample1);
+  const swiper = useSwiper();
 
   const { width } = useWindowDimensions();
 
@@ -74,12 +76,20 @@ export default function Portifolio() {
             <div className={Styles.contentCards}>
               <div className={Styles.carouselHeader}>
                 <h3>TECNOLOGIA</h3>
-                <button><img src="/images/arrowLeft.svg" alt="" /></button>
-                <button><img src="/images/arrowRight.svg" alt="" /></button>
+                <button className="prev-tec"><img src="/images/arrowLeft.svg" alt="" /></button>
+                <button className="next-tec"><img src="/images/arrowRight.svg" alt="" /></button>
               </div>
 
               <div className={Styles.carouselContainer}>
-                <Carousel loop={true} perView={`${width < 475 ? 2.5 : 3.5}`} bullets={false}>
+                <Carousel 
+                  slidesPerView={Number(`${width < 475 ? 2.5 : 3.5}`)} 
+                  autoplay={false}                        
+                  navigation={{
+                    nextEl: ".next-tec",
+                    prevEl: ".prev-tec",
+                }}
+
+                >
                   <SwiperSlide onClick={() => handleOpenModal(modalDataSample2)} className={Styles.card}>
                     <img src="/images/dualEng.png" alt="" />
                   </SwiperSlide>
@@ -98,11 +108,18 @@ export default function Portifolio() {
             <div className={Styles.contentCards}>
             <div className={Styles.carouselHeader}>
               <h3>CONSTRUÇÃO CIVIL</h3>
-              <button><img src="/images/arrowLeft.svg" alt="" /></button>
-              <button><img src="/images/arrowRight.svg" alt="" /></button>
+              <button className="prev-civil"><img src="/images/arrowLeft.svg" alt="" /></button>
+              <button className="next-civil"><img src="/images/arrowRight.svg" alt="" /></button>
             </div>
               <div className={Styles.carouselContainer}>
-                <Carousel loop={true} perView={`${width < 475 ? 2.5 : 3.5}`} bullets={false}>
+                <Carousel 
+                  slidesPerView={Number(`${width < 475 ? 2.5 : 3.5}`)} 
+                  autoplay={false}
+                  navigation={{
+                    nextEl: ".next-civil",
+                    prevEl: ".prev-civil",
+                  }}
+                >
                   <SwiperSlide onClick={() => handleOpenModal(modalDataSample2)} className={Styles.card}>
                     <img src="/images/dualEng.png" alt="" />
                   </SwiperSlide>

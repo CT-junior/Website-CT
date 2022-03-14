@@ -33,7 +33,7 @@
 
   .ourAwardsContent {
     margin: 0 auto;
-    padding-top: 1rem;
+    padding-top: 2rem;
     width: 69.72vw;
 
     display: flex;
@@ -78,7 +78,7 @@
   .ourBelievingsContent {
     margin: 0 auto;
     width: 69.72vw;
-    padding-top: 1rem;
+    padding-top: 2rem;
 
     display: flex;
     flex-direction: column;
@@ -113,7 +113,7 @@
   .ourValuesContent {
     margin: 0 auto;
     width: 69.72vw;
-    padding-top: 1rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,17 +210,34 @@
 
         h2 {
           width: 50%;
-          padding-left: 0.7rem;
+          padding-left: 3rem;
           font-size: 1.875rem;
           text-shadow: 0px 4px 4px #00000038;
-
-          border-left: solid 5px var(--orange-200);
+          display: flex;
           border-radius: 0.275rem;
-          /*background: linear-gradient(#f89834, #ff6a00) padding-box,
-            linear-gradient(to top, #f89834, #ff6a00);
-          border-radius: 0.275rem;*/
-          //border-left: 4px solid transparent;
         }
+        h2::before {
+          width: 7px;
+          background: linear-gradient(
+            90deg,
+            var(--orange-100) 0%,
+            var(--orange-200) 100%
+          );
+          margin-right: 5px;
+          border-radius: 8px;
+          display: block;
+          content: "";
+        }
+        /*
+        h2:after {
+          content: "";
+          background-color: var(--orange-100);
+          height: 5px;
+          width: 5px;
+          border-radius: 0.275rem;
+          position: absolute;
+          //bottom: 0;
+        }*/
         p {
           width: 50%;
           font-size: 0.9375rem;

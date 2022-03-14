@@ -21,7 +21,6 @@
   align-items: center;
   justify-content: center;
 
-  
   .newsletterContent {
     margin-top: -2.625rem;
     width: auto;
@@ -134,7 +133,6 @@
 
 .footerLogo {
   max-width: 10.52rem;
-  //padding: 13.875rem 0 0 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -188,4 +186,7 @@
   img {
     margin-right: 1.3125rem;
   }
+}
+
+@media screen and(min-width:1200px) {
 }

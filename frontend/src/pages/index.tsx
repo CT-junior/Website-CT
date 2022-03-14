@@ -79,7 +79,7 @@ export default function IndexPage(){
         <section className={Styles.partnersSection}>
             <TitleOrange>Nossos Parceiros</TitleOrange>
             <div className={Styles.carouselContainer}>
-              <Carousel bullets={true}>
+              <Carousel pagination>
                 <SwiperSlide><img src="/images/rocketseatLogo.png" alt="" /></SwiperSlide>
                 <SwiperSlide><img src="/images/ufesLogo.png" alt="" /></SwiperSlide>
                 <SwiperSlide><img src="/images/americanasLogo.png" alt="" /></SwiperSlide>

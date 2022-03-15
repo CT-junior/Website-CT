@@ -23,7 +23,6 @@ export function Footer(){
                         </div>
                     </form>
                     
-                    
                 </div>
             </section>
             

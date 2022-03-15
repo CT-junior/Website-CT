@@ -30,12 +30,13 @@
     }
   }
 
-  > :last-child {
+  button {
     display: none;
   }
 }
 
 .servicesSection {
+    padding-top: 0.875rem;
   .servicesContent {
     margin: 0 auto;
     width: 69.72vw;
@@ -48,55 +49,61 @@
     > p {
       display: none;
     }
-
-    .servicesCard {
-      width: 100%;
-      background-color: var(--gray-100);
-      border-radius: 0.275rem;
-      padding: 1.188rem;
-
-      margin-top: 1.125rem;
-
-      box-shadow: 0.156rem 0.156rem 0.786rem 0 rgba(0, 0, 0, 0.25);
-
-      img {
-        width: 3.75rem;
-      }
-
-      h3 {
-        font-size: 0.875rem;
-        font-weight: 600;
-
-        background-image: linear-gradient(90deg, var(--orange-100), var(--orange-200));
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-        margin-top: 0.625rem;
-      }
-
-      p {
-        font-size: 0.75rem;
-        font-weight: 400;
-        line-height: 1rem;
-
+    .servicesCards{
+      .servicesCard {
+        width: 100%;
+        background-color: var(--gray-100);
+        border-radius: 0.275rem;
+        padding: 1.188rem;
+  
         margin-top: 1.125rem;
+  
+        box-shadow: 0.156rem 0.156rem 0.786rem 0 rgba(0, 0, 0, 0.25);
+  
+        img {
+          width: 3.75rem;
+        }
+  
+        h3 {
+          font-size: 0.875rem;
+          font-weight: 600;
+  
+          background-image: linear-gradient(90deg, var(--orange-100), var(--orange-200));
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+  
+          margin-top: 0.625rem;
+        }
+  
+        p {
+          font-size: 0.75rem;
+          font-weight: 400;
+          line-height: 1rem;
+  
+          margin-top: 1.125rem;
+        }
       }
+  
     }
-
-    :last-child {
+   
+    > button{
       margin-top: 1.375rem;
+      margin: 1.375rem 0 1.875rem 0;
+      padding: 0.375rem 0.375rem;
     }
   }
 }
 
 .whyCtjuniorSection {
   .whyCtjuniorContent {
+    
     max-width: 65.313rem;
-    margin: 0 auto;
-    .whyCtjuniorInfo {
-      margin: 0 auto;
-      width: 69.72vw;
 
+    margin: 0 auto;
+
+    .whyCtjuniorInfo {
+      width: 69.72vw;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -111,7 +118,7 @@
 
       ul {
         width: 79.78%;
-        max-width: 30.625rem;
+        
         margin-top: 1.625rem;
 
         display: flex;
@@ -131,10 +138,10 @@
 
     img {
       margin-top: 1.5rem;
-      width: 98.5vw;
+      width: 100%;
     }
 
-    img + img {
+   img + img {
       display: none;
       margin-left: auto;
     }
@@ -143,8 +150,12 @@
 
 .partnersSection {
   max-width: 65.313rem;
-  margin: 0 auto;
-
+  margin: 4rem auto 3.125rem auto;
+  
+  .carouselContainer{
+    width: 84.86vw;
+    margin-left: 15.14vw;
+  }
   .partnersLogos {
     display: none;
   }
@@ -160,6 +171,8 @@
 .contactUs {
   max-width: 65.313rem;
   margin: 0 auto;
+
+
 }
 
 @media screen and(min-width:1200px) {
@@ -212,15 +225,18 @@
       background-size: cover;
     }
 
-    > :last-child {
+    button {
       display: unset;
       z-index: 2;
+      font-size: 1.25rem;
+      padding: 0.625rem 1.625rem;
+
     }
   }
 
   .servicesSection {
+    padding-top: 3.313rem;
     .servicesContent {
-      margin-top: 3.313rem;
       > p {
         display: unset;
         margin: 0.938rem auto 0 0;
@@ -251,6 +267,11 @@
 
           position: relative;
           overflow: hidden;
+
+          &:hover{
+            transform: scale(1.02);
+            background-color: var(--white);
+          }
 
           .headerCard {
             display: flex;
@@ -292,7 +313,7 @@
         }
       }
 
-      > :last-child {
+      > button {
         display: none;
       }
     }
@@ -305,8 +326,10 @@
 
     .whyCtjuniorContent {
       display: flex;
+      width: 69.72vw;
 
       .whyCtjuniorInfo {
+        width: unset;
         margin: 1.438rem auto 1.438rem 0;
         height: 100%;
 
@@ -380,7 +403,13 @@
       margin: 5.625rem 0 4.375rem 0;
       img {
         width: auto;
+        transition: .3s;
+        &:hover{
+          transform: scale(1.25);
+        }
       }
     }
+
+    
   }
 }

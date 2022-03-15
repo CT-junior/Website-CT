@@ -1,29 +1,28 @@
 import Styles from "./styles.module.scss";
 
-import { Swiper } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper';
+import { Swiper , SwiperProps} from "swiper/react";
+import { Autoplay, Pagination, Navigation} from "swiper";
 
 import useWindowDimensions from "../../Hooks/useWindowDimensions";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/controller"
 
-type Props = {
+interface CarouselProps extends SwiperProps{
   children: React.ReactNode;
 };
 
-export function Carousel({ children }: Props) {
+export function Carousel({ children, ...rest }: CarouselProps) {
   const { width } = useWindowDimensions();
 
   return (
     <Swiper
-      pagination={{
-        dynamicBullets: true,
-      }}
-      className={Styles.carousel}
-      modules={[Autoplay, Pagination]}
+      modules={[Autoplay, Pagination, Navigation]}
+      className={Styles.carouselContainer}
+      tag={Styles.carouselWrapper}
       spaceBetween={18}
       slidesPerView={width / 400}
       loop={true}
@@ -31,6 +30,7 @@ export function Carousel({ children }: Props) {
         delay: 2500,
         disableOnInteraction: false,
       }}
+      {...rest}
     >
       {children}
     </Swiper>

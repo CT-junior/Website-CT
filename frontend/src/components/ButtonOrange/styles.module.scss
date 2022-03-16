@@ -1,6 +1,6 @@
 .button {
   cursor: pointer;
-
+  position: relative;
   // padding: 0.625rem 0.938rem;
 
   // font-size: 1.6rem;
@@ -10,10 +10,11 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  border: 0.175rem solid;
-  border-radius: 0.25rem;
+  border: 0.2rem solid;
+  border-radius: 0.2rem;
   border-image: linear-gradient(90deg, var(--orange-100), var(--orange-200) 50%);
-  border-image-slice: 2;
+  border-image-slice: 3;
+
 }
 
 @media screen and(min-width:1200px) {

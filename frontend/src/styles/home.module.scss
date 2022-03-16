@@ -154,7 +154,7 @@
   
   .carouselContainer{
     width: 84.86vw;
-    margin-left: 15.14vw;
+    margin-left: 7.57vw;
   }
   .partnersLogos {
     display: none;
@@ -373,9 +373,10 @@
       img + img {
         display: unset;
 
-        position: absolute;
-        right: 0;
+        // position: absolute;
+        // right: 0;
 
+        margin-right: - 14.45vw;
         margin-top: 0;
         max-width: 35.375rem;
         max-height: 29.5rem;
@@ -411,5 +412,17 @@
     }
 
     
+  }
+}
+
+@media screen and(min-width:1500px){
+  .whyCtjuniorSection{
+    .whyCtjuniorContent {
+      img + img {
+
+        margin-right:calc((1061px - 100vw) / 2) ;
+
+      }
+    }
   }
 }

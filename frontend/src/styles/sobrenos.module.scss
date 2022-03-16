@@ -1,12 +1,18 @@
 .aboutUsContainer {
   .aboutUsContent {
     margin: 0 auto;
+    padding-top: 1rem;
     width: 69.72vw;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    .aboutUsTitle {
+      padding-top: 1rem;
+      justify-content: start;
+    }
 
     p {
       margin-top: 1.25rem;
@@ -27,6 +33,7 @@
 
   .ourAwardsContent {
     margin: 0 auto;
+    padding-top: 2rem;
     width: 69.72vw;
 
     display: flex;
@@ -34,37 +41,44 @@
     align-items: center;
     justify-content: center;
 
-    ul {
-      width: 79.78%;
-      margin-top: 1.625rem;
+    .ourAwardsLeftBox {
+      ul {
+        width: 79.78%;
+        margin-top: 1.625rem;
+        margin-left: 1.625rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
 
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
+        list-style-position: outside;
+        list-style-image: url("../../public/images/iconBulletedList.svg");
 
-      list-style-position: outside;
-      list-style-image: url("../../public/images/iconBulletedList.svg");
-
-      li {
-        font-size: 0.75rem;
-        font-weight: 400;
-        text-align: justify;
-        color: var(--gray-100);
+        li {
+          font-size: 0.75rem;
+          font-weight: 400;
+          text-align: justify;
+          color: var(--gray-100);
+        }
       }
     }
-    img {
-      margin-bottom: 1.4375rem;
-      margin-top: 1.4375rem;
+    .ourAwardsRightBox {
+      img {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        max-width: 12.375rem;
+      }
     }
   }
 }
 
 .ourBelievingsContainer {
   background-image: url("../../public/images/fotoAvioes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   .ourBelievingsContent {
     margin: 0 auto;
     width: 69.72vw;
-    padding-top: 1rem;
+    padding-top: 2rem;
 
     display: flex;
     flex-direction: column;
@@ -99,7 +113,7 @@
   .ourValuesContent {
     margin: 0 auto;
     width: 69.72vw;
-    padding-top: 1rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,6 +136,143 @@
 
         b {
           color: var(--green-200);
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .aboutUsContainer {
+    .aboutUsContent {
+      padding-top: 4.6rem;
+      p {
+        padding-top: 1rem;
+        font-size: 0.9375rem;
+      }
+      img {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  .ourAwardsContainer {
+    background-image: url("../../public/images/fundoPremios.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .ourAwardsContent {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      .ourAwardsLeftBox {
+        width: 50%;
+        ul {
+          width: 90%;
+          li {
+            font-size: 0.9375rem;
+          }
+        }
+      }
+      .ourAwardsRightBox {
+        width: 50%;
+        img {
+          padding-left: 3.125rem;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .ourBelievingsContainer {
+    background-image: url("../../public/images/fotoAvioesDesktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 3.125rem;
+    border-bottom-right-radius: 3.125rem;
+    .ourBelievingsContent {
+      padding-top: 6.125rem;
+
+      .ourBelievingsTopics {
+        margin: 0 0 0 0;
+        padding: 6.125rem 4.375rem 4.125rem 4.375rem;
+
+        div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 2rem;
+        }
+
+        h2 {
+          width: 50%;
+          padding-left: 3rem;
+          font-size: 1.875rem;
+          text-shadow: 0px 4px 4px #00000038;
+          display: flex;
+          border-radius: 0.275rem;
+        }
+        h2::before {
+          width: 7px;
+          background: linear-gradient(
+            90deg,
+            var(--orange-100) 0%,
+            var(--orange-200) 100%
+          );
+          margin-right: 5px;
+          border-radius: 8px;
+          display: block;
+          content: "";
+        }
+        /*
+        h2:after {
+          content: "";
+          background-color: var(--orange-100);
+          height: 5px;
+          width: 5px;
+          border-radius: 0.275rem;
+          position: absolute;
+          //bottom: 0;
+        }*/
+        p {
+          width: 50%;
+          font-size: 0.9375rem;
+          margin: 0 0 0 0;
+        }
+      }
+    }
+  }
+
+  .ourValuesContainer {
+    .ourValuesContent {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      .ourValuesTopics {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        div {
+          display: flex;
+          flex-direction: row;
+
+          div {
+            width: 50%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            img {
+              width: 4.1875rem;
+              height: 4.1875rem;
+            }
+            p {
+              padding-left: 2rem;
+              padding-right: 1.5rem;
+              font-size: 0.9375rem;
+            }
+          }
         }
       }
     }

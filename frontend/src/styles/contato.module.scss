@@ -1,13 +1,19 @@
+.tellUsContainer {
+  .tellUsContent {
+    padding-top: 2rem;
+  }
+}
+
 .ourLocationContainer {
   .ourLocationContent {
+    padding-top: 3rem;
     margin: 0 auto;
     margin-top: -3rem;
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
     width: 69.72vw;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 
     p {
@@ -17,8 +23,43 @@
       text-align: justify;
       margin-bottom: 1.25rem;
     }
+  }
+}
 
+.ourLocationMap {
+  iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 11rem;
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .tellUsContainer {
+    .tellUsContent {
+      background-image: url("../../public/images/fundoForms.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-left: 1rem;
+      border-radius: 2rem;
+      margin-top: 5.25rem;
+      margin-left: 10.375rem;
+      margin-right: 10.375rem;
+    }
+  }
+
+  .ourLocationContainer {
+    .ourLocationContent {
+      padding-top: 5rem;
+      p {
+        font-size: 0.9375rem;
+      }
+    }
+  }
+
+  .ourLocationMap {
     iframe {
+      min-height: 31rem;
       border: 0;
     }
   }

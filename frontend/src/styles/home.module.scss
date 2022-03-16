@@ -372,10 +372,13 @@
 
       img + img {
         display: unset;
+
+        position: absolute;
+        right: 0;
+
         margin-top: 0;
         max-width: 35.375rem;
         max-height: 29.5rem;
-        margin-right: -15.14vw;
       }
     }
   }

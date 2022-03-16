@@ -27,16 +27,19 @@ export default function SobreNos(){
 
         <section className={Styles.ourAwardsContainer}>
           <div className={Styles.ourAwardsContent}>
-            <TitleOrange>Nossa premiações</TitleOrange>
-            <ul>
-              <li>Em 2015 ganhamos o prêmio de melhor case no Encontro Nacional de Empresas Juniores;</li>
-              <li>Em 2016, pela nossa federação Juniores, ganhamos o prêmio de Impacto na Rede;</li>
-              <li>Em 2018 voltamos a ser a empresa Impacto na Rede, mas dessa vez levamos também o prêmio de Vendedor do Ano;</li>
-              <li>Em 2020, conquistamos os títulos de Alto Crescimento e Conectada;</li>
-              <li>Em 2021, fomos reconhecidos no Evento Nacional de Empresas Juniores e ainda pretendemos alcançar vôos mais altos.</li>
-            </ul>
-
-            <img src="./images/imagemPremio.png" alt="Prêmio recebido pela empresa" />
+            <div className={Styles.ourAwardsLeftBox}>
+              <TitleOrange>Nossas premiações</TitleOrange>
+              <ul>
+                <li>Em 2015 ganhamos o prêmio de melhor case no Encontro Nacional de Empresas Juniores;</li>
+                <li>Em 2016, pela nossa federação Juniores, ganhamos o prêmio de Impacto na Rede;</li>
+                <li>Em 2018 voltamos a ser a empresa Impacto na Rede, mas dessa vez levamos também o prêmio de Vendedor do Ano;</li>
+                <li>Em 2020, conquistamos os títulos de Alto Crescimento e Conectada;</li>
+                <li>Em 2021, fomos reconhecidos no Evento Nacional de Empresas Juniores e ainda pretendemos alcançar vôos mais altos.</li>
+              </ul>
+            </div>
+            <div className={Styles.ourAwardsRightBox}>
+              <img src="./images/imagemPremio.png" alt="Prêmio recebido pela empresa" />
+            </div>
           </div>
         </section>
 
@@ -44,14 +47,21 @@ export default function SobreNos(){
           <div className={Styles.ourBelievingsContent}>
             <TitleOrange>No que acreditamos</TitleOrange>
             <div className={Styles.ourBelievingsTopics}>
-              <h2>Missão</h2>
-              <p>Executar projetos de excelência para nossos clientes, contribuindo com o desenvolvimento dos estudantes do centro tecnológico por meio da vivência empresarial.</p>
-
-              <h2>Visão</h2>
-              <p>Ser uma empresa referência no mercado brasileiro, formando jovens líderes empreendedores que geram grandes resultados por meio dos seus projetos de excelência.</p>
-
-              <h2>Propósito</h2>
-              <p>Transformar pessoas em líderes empreendedores de valores sólidos que são capazes e comprometidos em impactar a sociedade.</p>
+              <div>
+                <h2>Missão</h2>
+                <p>Executar projetos de excelência para nossos clientes, contribuindo com o desenvolvimento dos estudantes do centro tecnológico por meio da vivência empresarial.</p>
+              </div>
+              
+              <div>
+                <h2>Visão</h2>
+                <p>Ser uma empresa referência no mercado brasileiro, formando jovens líderes empreendedores que geram grandes resultados por meio dos seus projetos de excelência.</p>
+              </div>
+              
+              <div>
+                <h2>Propósito</h2>
+                <p>Transformar pessoas em líderes empreendedores de valores sólidos que são capazes e comprometidos em impactar a sociedade.</p>
+              </div>
+              
             </div>
           </div>
         </section>
@@ -60,20 +70,35 @@ export default function SobreNos(){
           <div className={Styles.ourValuesContent}>
             <TitleOrange>Nossos valores</TitleOrange>
             <div className={Styles.ourValuesTopics}>
-              <img src="./images/focoResultados.svg" alt="Icone Foco em Resultados" />
-              <p><b>Foco em resultados:</b> Buscamos incessantemente a geração de valor para nossos clientes, com foco na qualidade, satisfação e no desenvolvimento de nossos produtos e colaboradores.</p>
+              <div>
+                <div>
+                  <img src="./images/focoResultados.svg" alt="Icone Foco em Resultados" />
+                  <p><b>Foco em resultados:</b> Buscamos incessantemente a geração de valor para nossos clientes, com foco na qualidade, satisfação e no desenvolvimento de nossos produtos e colaboradores.</p>
+                </div>
+                <div>
+                  <img src="./images/espiritoDono.svg" alt="Icone Espirito de Dono" />
+                  <p><b>Espirito de dono:</b> Pensamos e agimos como donos, zelando pela nossa instituição. Estamos cientes que somos os únicos responsáveis pelos nossos resultados.</p>
+                </div>
+              </div>
+              
+              <div>
+                <div>
+                  <img src="./images/empatia.svg" alt="Icone Empatia" />
+                  <p><b>Empatia:</b> Respeitamos e compreendemos as diferenças, valorizamos as pessoas e nos preocupamos com seu bem estar.</p>
+                </div>
+                <div>
+                  <img src="./images/profissionalismo.svg" alt="Icone Profissionalismo" />
+                  <p><b>Profissionalismo:</b> Agimos com ética, responsabilidade e comprometimento com nossos resultados.</p>
+                </div>
+              </div>
+              
+              <div>
+                <div>
+                  <img src="./images/feedback.svg" alt="Icone Feedback" />
+                  <p><b>Feedback:</b> Praticamos com transparência a comunicação, buscando sempre o crescimento mútuo.</p>
+                </div>
+              </div>
 
-              <img src="./images/espiritoDono.svg" alt="Icone Espirito de Dono" />
-              <p><b>Espirito de dono:</b> Pensamos e agimos como donos, zelando pela nossa instituição. Estamos cientes que somos os únicos responsáveis pelos nossos resultados.</p>
-
-              <img src="./images/empatia.svg" alt="Icone Empatia" />
-              <p><b>Empatia:</b> Respeitamos e compreendemos as diferenças, valorizamos as pessoas e nos preocupamos com seu bem estar.</p>
-
-              <img src="./images/profissionalismo.svg" alt="Icone Profissionalismo" />
-              <p><b>Profissionalismo:</b> Agimos com ética, responsabilidade e comprometimento com nossos resultados.</p>
-
-              <img src="./images/feedback.svg" alt="Icone Feedback" />
-              <p><b>Feedback:</b> Praticamos com transparência a comunicação, buscando sempre o crescimento mútuo.</p>
             </div>
           </div>
         </section>

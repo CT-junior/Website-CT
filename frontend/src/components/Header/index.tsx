@@ -13,7 +13,7 @@ export function Header() {
     return (
         <header className={Styles.headerContainer}>
             <div className={Styles.headerContent}>
-                <div>
+                <div className={Styles.header}>
                     <button
                         className={`${Styles.hamburgerMenu} ${menuOpen == true ? Styles.menuHamburgerOpen : ''}`}
                         onClick={() => { setMenuOpen(!menuOpen) }}

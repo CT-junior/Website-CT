@@ -9,7 +9,37 @@ import { Carousel } from "../components/Carousel";
 import { SwiperSlide } from 'swiper/react';
 
 import Styles from "../styles/home.module.scss";
-import { WhatsappButton } from "../components/WhatsappButton";
+
+const  imagesCarousel =  [ 
+  { 
+    id: 0,
+    url : "/images/rocketseatLogo.png" , 
+    name : "Rocketseat" 
+  } , 
+  { 
+    id: 1,
+    url : "/images/ufesLogo.png" , 
+    name : "Ufes" 
+  } , 
+  { 
+    id: 2,
+    url : "/images/americanasLogo.png" , 
+    name : "Americanas" 
+  } , 
+  { 
+    id: 3,
+    url : "/images/labLogo.png" , 
+    name : "Lab" 
+  },
+  {
+    id: 4,
+    url: "/images/servinoLogo.png",
+    name: "Servino"
+  },
+
+] ;
+
+// const shuffledList = shuffleArray(imagesCarousel);
 
 
 export default function IndexPage(){
@@ -80,9 +110,10 @@ export default function IndexPage(){
             <TitleOrange>Nossos Parceiros</TitleOrange>
             <div className={Styles.carouselContainer}>
               <Carousel pagination>
-                <SwiperSlide><img src="/images/rocketseatLogo.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="/images/ufesLogo.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="/images/americanasLogo.png" alt="" /></SwiperSlide>
+                {imagesCarousel.map( item =>(
+                    <SwiperSlide key={item.id}><img src={item.url} alt={item.name} /></SwiperSlide>
+                ))}
+      
               </Carousel>
             </div>
             <div className={Styles.partnersLogos}>
@@ -103,3 +134,10 @@ export default function IndexPage(){
   );
 };
 
+
+// function shuffleArray(arr: any[]) {
+//   return arr
+//     .map(a => [Math.random(), a])
+//     .sort((a, b) => a[0] - b[0])
+//     .map(a => a[1]);
+// }

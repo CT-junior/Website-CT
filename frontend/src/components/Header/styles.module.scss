@@ -1,6 +1,6 @@
 .headerContainer{ 
     .headerContent{
-        >:first-child{
+        .header{
             background-color: var(--gray-100);
             position: fixed;
             top: 0;
@@ -146,7 +146,7 @@
                 padding: 0 2rem;
 
 
-            >:first-child{
+            .header{
                 z-index: unset;
                 height: unset;
                 position: absolute;

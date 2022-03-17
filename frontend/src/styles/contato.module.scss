@@ -37,20 +37,22 @@
 @media screen and(min-width:1200px) {
   .tellUsContainer {
     .tellUsContent {
+      margin: 0 auto;
+      max-width: 69.25rem;
       background-image: url("../../public/images/fundoForms.png");
       background-repeat: no-repeat;
       background-size: cover;
       padding-left: 1rem;
       border-radius: 2rem;
       margin-top: 5.25rem;
-      margin-left: 10.375rem;
-      margin-right: 10.375rem;
     }
   }
 
   .ourLocationContainer {
     .ourLocationContent {
+      max-width: 69.25rem;
       padding-top: 5rem;
+      padding-left: 1rem;
       p {
         font-size: 0.9375rem;
       }

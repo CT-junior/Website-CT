@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link';
 import styles from './styles.module.scss';
 
 export function Footer() {
@@ -28,13 +29,15 @@ export function Footer() {
                 </section>
 
                 <img className={styles.footerLogo} src='./images/logoBranca.png' alt="Logo da Empresa" />
-                <ul className={styles.links}>
-                    <li>Início</li>
-                    <li>Quem Somos</li>
-                    <li>Portfólio</li>
-                    <li>Contato</li>
-                    <li>Material</li>
-                </ul>
+                <nav className={styles.links}>
+                    <ul>
+                        <li><Link href='/'>Início</Link></li>
+                        <li><Link href='/sobrenos'>Quem Somos</Link></li>
+                        <li><Link href='/portfolio'>Portfólio</Link></li>
+                        <li><Link href='/contato'>Contato</Link></li>
+                        <li><Link href='/materialrico'>Material</Link></li>
+                    </ul>
+                </nav>
 
                 <div className={styles.contact}>
                     <div className={styles.footerEmail}>
@@ -51,13 +54,13 @@ export function Footer() {
                 <div className={styles.footerSocials}>
                     <p>Acompanhe-nos!</p>
                     <div>
-                        <a href="https://www.instagram.com/ctjuniorufes/">
+                        <a target="_blank" href="https://www.instagram.com/ctjuniorufes/" rel="noopener noreferrer">
                             <img src="./images/instaLogo.svg" alt="logo instagram" />
                         </a>
-                        <a href="https://www.facebook.com/ufesctjunior/">
+                        <a target="_blank" href="https://www.facebook.com/ufesctjunior/" rel="noopener noreferrer">
                             <img src="./images/faceLogo.svg" alt="logo facebook" />
                         </a>
-                        <a href="https://www.linkedin.com/company/ct-junior/">
+                        <a target="_blank" href="https://www.linkedin.com/company/ct-junior/" rel="noopener noreferrer">
                             <img src="./images/linkedinLogo.svg" alt="logo linkedin" />
                         </a>
                     </div>

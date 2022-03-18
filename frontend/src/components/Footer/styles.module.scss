@@ -9,6 +9,10 @@
     margin-bottom: 2.25rem;
     color: var(--white);
 
+    ul {
+      list-style-type: none;
+    }
+
     li {
       margin-top: 0.5rem;
     }
@@ -221,6 +225,8 @@
 
       margin: 0 4rem;
       padding-left: 1rem;
+
+
     }
 
     .contact {

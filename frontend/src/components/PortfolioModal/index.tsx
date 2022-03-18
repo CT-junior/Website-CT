@@ -19,6 +19,7 @@ export function PortfolioModal({ ...Props }: Props) {
       isOpen={Props.modalIsOpen}
       onRequestClose={Props.handleCloseModal}
       overlayClassName={Styles.modalContainer}
+      ariaHideApp={false}
       className={Styles.modalContent}
     >
       <div className={Styles.title}>

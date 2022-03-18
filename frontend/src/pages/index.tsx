@@ -39,9 +39,6 @@ const  imagesCarousel =  [
 
 ] ;
 
-// const shuffledList = shuffleArray(imagesCarousel);
-
-
 export default function IndexPage(){
   return (
     <>
@@ -117,11 +114,9 @@ export default function IndexPage(){
               </Carousel>
             </div>
             <div className={Styles.partnersLogos}>
-              <img src="/images/rocketseatLogo.png" alt="" />
-              <img src="/images/ufesLogo.png" alt="" />
-              <img src="/images/americanasLogo.png" alt="" />
-              <img src="/images/labLogo.png" alt="" />
-              <img src="/images/servinoLogo.png" alt="" />
+              {imagesCarousel.map( item => (
+                <img key={item.id} src={item.url} alt={item.name} />
+              ))}
             </div>
         </section>
         <section className={Styles.contactUs}>
@@ -133,11 +128,3 @@ export default function IndexPage(){
     </>
   );
 };
-
-
-// function shuffleArray(arr: any[]) {
-//   return arr
-//     .map(a => [Math.random(), a])
-//     .sort((a, b) => a[0] - b[0])
-//     .map(a => a[1]);
-// }

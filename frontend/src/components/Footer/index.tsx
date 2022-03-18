@@ -33,6 +33,7 @@ export function Footer() {
                     <ul>
                         <li><Link href='/'>Início</Link></li>
                         <li><Link href='/sobrenos'>Quem Somos</Link></li>
+                        <li><Link href='/servicos'>Servicos</Link></li>
                         <li><Link href='/portfolio'>Portfólio</Link></li>
                         <li><Link href='/contato'>Contato</Link></li>
                         <li><Link href='/materialrico'>Material</Link></li>

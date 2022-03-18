@@ -38,7 +38,6 @@ export function Header() {
                         <ActiveLink href='/contato' activeClassName={Styles.active}>
                             <a>Contato</a>
                         </ActiveLink>
-
                     </nav>
                 </div>
 

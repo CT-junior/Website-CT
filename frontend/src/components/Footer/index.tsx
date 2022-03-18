@@ -1,32 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
+import { NewsletterForm } from '../NewsletterForm';
 import styles from './styles.module.scss';
+//import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 export function Footer() {
     return (
         <footer className={styles.footerContainer}>
             <div className={styles.footerContent}>
-                <section className={styles.newsletterContainer}>
-                    <div className={styles.newsletterContent}>
-                        <div className={styles.newsletterTitle}>
-                            <h2>Quer receber<br />nossos conteúdos?</h2>
-                        </div>
-
-                        <form className={styles.newsletterForm}>
-                            <label htmlFor="name"></label>
-                            <input type="text" name="name" id="name" placeholder="Nome" required />
-
-                            <label htmlFor="email"></label>
-                            <input type="email" name="email" id="email" placeholder="E-mail" required />
-
-                            <div className={styles.newsletterButton}>
-                                <button type="submit">Assinar Newsletter</button>
-                            </div>
-                        </form>
-
-
-                    </div>
-                </section>
+                <NewsletterForm/>
 
                 <img className={styles.footerLogo} src='./images/logoBranca.png' alt="Logo da Empresa" />
                 <nav className={styles.links}>

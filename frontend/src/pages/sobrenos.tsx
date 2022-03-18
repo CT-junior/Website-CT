@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { NewsletterForm } from "../components/NewsletterForm";
 
 import { TitleOrange } from "../components/TitleOrange";
 
@@ -102,7 +103,6 @@ export default function SobreNos(){
             </div>
           </div>
         </section>
-
       </main>
       
     </>

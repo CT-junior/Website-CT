@@ -29,6 +29,7 @@ export function Header() {
                 <div className={`${Styles.menuContent} ${menuOpen == true ? Styles.menuContentShow : ''}`}>
                     <nav onClick={() => { setMenuOpen(false) }}>
                         <Link href='/sobrenos'><a className={query == 'sobrenos' ? Styles.active : ""}>Quem Somos</a></Link>
+                        <Link href='/servicos'><a className={query == 'servicos' ? Styles.active : ""}>Serviços</a></Link>
                         <Link href='/portfolio'><a className={`${query == 'portfolio' ? Styles.active : ""}`}>Portfólio</a></Link>
                         <Link href='/materialrico'><a className={`${query == 'materialrico' ? Styles.active : ""}`}>Material Rico</a></Link>
                         <Link href='/contato'><a className={`${query == 'contato' ? Styles.active : ""}`}>Contato</a></Link>

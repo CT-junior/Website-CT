@@ -29,6 +29,9 @@ export function Header() {
                         <ActiveLink href='/sobrenos' activeClassName={Styles.active}>
                             <a>Quem Somos</a>
                         </ActiveLink>
+                        <ActiveLink href='/servicos' activeClassName={Styles.active}>
+                            <a>Serviços</a>
+                        </ActiveLink>
                         <ActiveLink href='/portfolio' activeClassName={Styles.active}>
                             <a>Portfólio</a>
                         </ActiveLink>

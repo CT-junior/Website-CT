@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import { useState } from "react";
-import { useSwiper } from "swiper/react";
 import useWindowDimensions from "../Hooks/useWindowDimensions";
 
 import { TitleOrange } from "../components/TitleOrange";
@@ -10,7 +9,6 @@ import { SwiperSlide } from "swiper/react";
 import { PortfolioModal } from "../components/PortfolioModal";
 
 import Styles from "../styles/portfolio.module.scss";
-
 
 type ModalData = {
   imgSrc: string;

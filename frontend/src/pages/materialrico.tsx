@@ -1,9 +1,10 @@
 import Head from "next/head";
 
-import { TitleOrange } from "../../components/TitleOrange";
-import { ButtonOrange } from "../../components/ButtonOrange";
+import { TitleOrange } from "../components/TitleOrange";
+import { ButtonOrange } from "../components/ButtonOrange";
 
-import Styles from "./styles.module.scss";
+import Styles from "../styles/materialrico.module.scss";
+
 export default function MaterialRico() {
   return (
     <main>

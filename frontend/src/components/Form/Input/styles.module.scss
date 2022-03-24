@@ -1,0 +1,127 @@
+.inputBox {
+  margin: 0 auto 1.563rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  label {
+    font-family: "PT Sans";
+    font-size: 0.875rem;
+
+    padding-left: 0.5rem;
+
+  }
+
+  input:not(input[type="range"]){
+    width: 100%;
+    color: var(--very-dark-green);
+    padding: 0.25rem 0.625rem;
+    background-color: var(--gray-125);
+
+    box-sizing: border-box;
+    border: 0.051rem solid var(--white);
+    border-radius: 0.36rem;
+    box-shadow: 0 0.206rem 0.206rem 0 rgba(0, 0, 0, 0.15);
+  }
+
+  span{
+    font-family: PT Sans;
+    color: var(--error-message);
+    padding-left: 0.5rem;
+  }
+
+}
+
+.slideBox {
+  width: 100%;
+  margin: 0 auto 1.563rem auto;
+  
+  label {
+    font-family: "PT Sans";
+    font-size: 0.875rem;
+    padding-left: 0.5rem;
+  }
+
+  .slideField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    input {
+      width: 100%;
+      margin-top: 0.563rem;
+
+      -webkit-appearance: none;
+      outline: none;
+
+      background-color: var(--dark-blue);
+      height: 2px;
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: var(--dark-blue);
+      }
+    }
+
+    .slideDashes {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-top: 0.5rem;
+      padding: 0 0.45rem;
+
+      span {
+        display: block;
+        width: 1px;
+        height: 4px;
+        background-color: var(--dark-blue);
+      }
+    }
+  }
+
+  .rangeValue {
+    text-align: center;
+    color: var(--dark-blue);
+
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .inputBox{
+    
+    label {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--very-dark-green);
+    }
+    input{
+      font-size: 1.1rem;
+    }
+
+  }
+
+  .slideBox{
+    label {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--very-dark-green);
+    }
+    
+    input {
+      height: 4px;
+    }
+
+    .rangeValue {
+      font-size: 1.1rem;
+    }
+  }
+  
+  
+}

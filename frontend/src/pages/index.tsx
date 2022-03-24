@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 
-import { TellUsForm } from "../components/TellUsForm";
+import { TellUsForm } from "../components/Form/TellUsForm";
 import { TitleOrange } from "../components/TitleOrange";
 import { ButtonOrange } from "../components/ButtonOrange";
 
@@ -121,7 +121,7 @@ export default function IndexPage(){
         </section>
         <section className={Styles.contactUs}>
           <TitleOrange>Nos conte sua ideia!</TitleOrange>
-          <TellUsForm/>      
+          <TellUsForm/>       
         </section>
       </main>
 

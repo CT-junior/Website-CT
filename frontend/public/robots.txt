@@ -1,0 +1,9 @@
+//robots.txt
+
+# Disallow all crawlers
+User-agent: *
+Disallow: /politicas
+
+# Allow all crawlers
+User-agent: *
+Allow: /

@@ -39,9 +39,10 @@
     .tellUsContent {
       margin: 0 auto;
       max-width: 69.25rem;
-      background-image: url("../../public/images/fundoForms.png");
-      background-repeat: no-repeat;
-      background-size: cover;
+      background-color: var(--gray-50);
+      background-image: url("../../public/images/noise_texture.png");
+      background-repeat: repeat;
+      background-size: auto;
       padding-left: 1rem;
       border-radius: 2rem;
       margin-top: 5.25rem;
@@ -53,6 +54,7 @@
       max-width: 69.25rem;
       padding-top: 5rem;
       padding-left: 1rem;
+
       p {
         font-size: 0.9375rem;
       }

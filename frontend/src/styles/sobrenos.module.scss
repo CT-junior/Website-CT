@@ -22,6 +22,7 @@
       text-align: justify;
       margin-bottom: 2rem;
     }
+
     img {
       margin-bottom: 2rem;
       max-width: 69.72vw;
@@ -63,6 +64,7 @@
         }
       }
     }
+
     .ourAwardsRightBox {
       img {
         padding-top: 1rem;
@@ -77,6 +79,7 @@
   background-image: url("../../public/images/fotoAvioes.png");
   background-repeat: no-repeat;
   background-size: cover;
+
   .ourBelievingsContent {
     max-width: 69.25rem;
     margin: 0 auto;
@@ -113,6 +116,7 @@
 
 .ourValuesContainer {
   margin-bottom: 2rem;
+
   .ourValuesContent {
     max-width: 69.25rem;
     margin: 0 auto;
@@ -150,10 +154,12 @@
   .aboutUsContainer {
     .aboutUsContent {
       padding-top: 4.6rem;
+
       p {
         padding-top: 1rem;
         font-size: 0.9375rem;
       }
+
       img {
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -162,9 +168,10 @@
   }
 
   .ourAwardsContainer {
-    background-image: url("../../public/images/fundoPremios.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("../../public/images/noise_texture.png");
+    background-repeat: repeat;
+    background-size: auto;
+
     .ourAwardsContent {
       display: flex;
       flex-direction: row;
@@ -172,17 +179,22 @@
       justify-content: space-between;
       padding-top: 2rem;
       padding-bottom: 2rem;
+
       .ourAwardsLeftBox {
         width: 50%;
+
         ul {
           width: 90%;
+
           li {
             font-size: 0.9375rem;
           }
         }
       }
+
       .ourAwardsRightBox {
         width: 50%;
+
         img {
           padding-left: 3.125rem;
           max-width: 100%;
@@ -197,6 +209,7 @@
     background-size: cover;
     border-bottom-left-radius: 3.125rem;
     border-bottom-right-radius: 3.125rem;
+
     .ourBelievingsContent {
       padding-top: 6.125rem;
 
@@ -220,18 +233,18 @@
           display: flex;
           border-radius: 0.275rem;
         }
+
         h2::before {
           width: 7px;
-          background: linear-gradient(
-            90deg,
-            var(--orange-100) 0%,
-            var(--orange-200) 100%
-          );
+          background: linear-gradient(90deg,
+              var(--orange-100) 0%,
+              var(--orange-200) 100%);
           margin-right: 5px;
           border-radius: 8px;
           display: block;
           content: "";
         }
+
         p {
           width: 50%;
           font-size: 0.9375rem;
@@ -245,10 +258,12 @@
     .ourValuesContent {
       padding-top: 4rem;
       padding-bottom: 4rem;
+
       .ourValuesTopics {
         padding-top: 2rem;
         display: flex;
         flex-direction: column;
+
         div {
           display: flex;
           flex-direction: row;
@@ -257,10 +272,12 @@
             width: 50%;
             padding-left: 1rem;
             padding-right: 1rem;
+
             img {
               width: 4.1875rem;
               height: 4.1875rem;
             }
+
             p {
               padding-left: 2rem;
               padding-right: 1.5rem;

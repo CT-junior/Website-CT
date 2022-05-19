@@ -36,17 +36,15 @@
             position: relative;
             padding: 0.5rem 1rem;
 
-            // font-size: 1.6rem;
             font-weight: 600;
             color: transparent;
-            // background: transparent;
+
             border-color: transparent;
             border-radius: 1rem;
 
             background: linear-gradient(90deg, var(--orange-100), var(--orange-200) 50%);
             -webkit-background-clip: text;
             background-clip: text;
-            // -webkit-text-fill-color: transparent;
 
             &::before {
                 content: "";
@@ -91,7 +89,7 @@
 
             display: flex;
             flex-wrap: wrap;
-            // justify-content: flex-start;
+
             column-gap: 4.25rem;
             row-gap: 3.438rem;
 
@@ -113,17 +111,14 @@
                     position: relative;
                     padding: 0.5rem 1rem;
 
-                    // font-size: 1.6rem;
                     font-weight: 600;
                     color: transparent;
-                    // background: transparent;
                     border-color: transparent;
                     border-radius: 1rem;
 
                     background: linear-gradient(90deg, var(--orange-100), var(--orange-200) 50%);
                     -webkit-background-clip: text;
                     background-clip: text;
-                    // -webkit-text-fill-color: transparent;
 
                     &::before {
                         content: "";

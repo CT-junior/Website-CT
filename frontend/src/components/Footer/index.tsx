@@ -8,9 +8,9 @@ export function Footer() {
     return (
         <footer className={styles.footerContainer}>
             <div className={styles.footerContent}>
-                <NewsletterForm/>
+                <NewsletterForm />
 
-                <img className={styles.footerLogo} src='./images/logoBranca.png' alt="Logo da Empresa" />
+                <img className={styles.footerLogo} src='./images/Logo_CT_Branca_Vertical.svg' alt="Logo da Empresa Vertical" />
                 <nav className={styles.links}>
                     <ul>
                         <li><Link href='/'>Início</Link></li>
@@ -50,10 +50,7 @@ export function Footer() {
                 </div>
 
                 <div className={styles.footerBottom}>
-                    <p>
-                        Feito com ❤️ por CT Junior
-                    </p>
-
+                    <div className={styles.footerMadeBy}></div>
                     <a target="_blank" href="https://vercel.com/?utm_source=ct-junior&utm_campaign=oss" rel="noopener noreferrer">
                         <img src="./images/vercelPowered.svg" alt="Powered by Vercel" />
                     </a>

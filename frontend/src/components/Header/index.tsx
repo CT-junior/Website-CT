@@ -21,7 +21,7 @@ export function Header() {
                         <span className={Styles.bottom}></span>
                     </button>
                     <Link href='/' passHref>
-                        <img onClick={() => { setMenuOpen(false) }} src='/images/logoverde.png' alt="Logo horizontal verde da CT Junior" />
+                        <img onClick={() => { setMenuOpen(false) }} src='/images/Logo_CT_Verde.svg' alt="Logo horizontal verde da CT Junior" />
                     </Link>
                 </div>
                 <div className={`${Styles.menuContent} ${menuOpen == true ? Styles.menuContentShow : ''}`}>

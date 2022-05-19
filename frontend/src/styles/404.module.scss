@@ -1,45 +1,45 @@
-.container{
+.container {
     height: calc(100vh - 5rem);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 0.8rem 0 1rem;
 
-    .content{
-        background-image: url("./../../public/images/bg404Mobile.png");
+    .content {
+        background-image: url("./../../public/images/404_background.svg");
         background-repeat: no-repeat;
         background-position: center;
-        background-size:85%;
-        
+        background-size: 85%;
+
         display: flex;
         height: 20rem;
 
-        img{
+        img {
             width: 6rem;
             height: 6rem;
             margin: auto 0;
         }
 
-        div{
+        div {
             margin: auto 0;
             padding-left: 1rem;
             font-family: 'Montserrat', sans-serif;
             font-size: 0.85rem;
             font-weight: 500;
-            
-            h1{
+
+            h1 {
                 font-size: 1.25rem;
                 font-weight: 800;
                 color: var(--green-400);
             }
 
-            span{
+            span {
                 display: block;
                 font-weight: 400;
-                
+
             }
 
-            a{
+            a {
                 margin-top: 1.625rem;
                 display: block;
                 color: var(--green-400);
@@ -51,45 +51,48 @@
 
 }
 
-@media screen and(min-width:1200px){
-    .container{
+@media screen and(min-width:1200px) {
+    .container {
         height: unset;
         padding: 10rem 0;
-    
-        .content{
-            
-            background-image: url("./../../public/images/bg404Desktop.png");
+
+        .content {
+
+            background-image: url("./../../public/images/404_background.svg");
             background-repeat: no-repeat;
             background-position: center top 120px;
-            background-size:86%;
-            
+            background-size: 86%;
+
             display: flex;
             height: 25rem;
             width: 41.25rem;
-    
-            img{
+
+            img {
 
                 width: 12rem;
                 height: 12rem;
                 margin: auto 0;
             }
-    
-            div{
+
+            div {
                 margin: auto 0;
                 padding-left: 1.75rem;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 500;
-                
-                h1, span, a{
+
+                h1,
+                span,
+                a {
                     font-size: 1.375rem;
 
                 }
-                span{
+
+                span {
                     margin-top: 0.25rem;
                 }
-    
+
             }
         }
-    
-    } 
+
+    }
 }

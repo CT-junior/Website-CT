@@ -1,15 +1,16 @@
-.container{
+.container {
     padding-top: 1.5rem;
     width: 69.72vw;
     margin: 0 auto 5rem auto;
 
-    p{
+    p {
         width: 100%;
         margin-top: 1.25rem;
         font-size: 0.75rem;
         text-align: justify;
     }
-    .materialCard{
+
+    .materialCard {
         margin: 2rem auto;
         width: 9rem;
         display: flex;
@@ -18,65 +19,135 @@
         justify-content: center;
 
 
-        img{
+        img {
             width: 100%;
             border-radius: 0.382rem;
         }
 
-        span{
+        span {
             margin: 0.75rem 0;
             width: 95%;
             font-size: 0.75rem;
             text-align: center;
         }
-        button{
-            margin-top: auto;
-            padding: 0.25rem 1rem;
-            font-size: 1rem;
-            border-radius:  0.438rem;
-            
+
+        button {
+            cursor: pointer;
+            position: relative;
+            padding: 0.5rem 1rem;
+
+            font-weight: 600;
+            color: transparent;
+
+            border-color: transparent;
+            border-radius: 1rem;
+
+            background: linear-gradient(90deg, var(--orange-100), var(--orange-200) 50%);
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            &::before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: .7rem;
+                border: 0.2rem solid transparent;
+                background: linear-gradient(90deg, var(--orange-100), var(--orange-200) 50%) border-box;
+                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: destination-out;
+                mask-composite: exclude;
+            }
+
+
+
+            &:hover {
+                color: white;
+                -webkit-background-clip: padding-box;
+                background-clip: padding-box;
+            }
+
         }
     }
 }
 
 @media screen and(min-width:1200px) {
-    .container{
-        padding: 4.375rem 0 10.25rem 0;        
-        p{
+    .container {
+        padding: 4.375rem 0 10.25rem 0;
+
+        p {
             font-size: 0.938rem;
         }
 
-        .materialCards{
+        .materialCards {
             max-width: 53.725rem;
             margin: 2rem auto 0 auto;
 
             display: flex;
             flex-wrap: wrap;
-            // justify-content: flex-start;
+
             column-gap: 4.25rem;
             row-gap: 3.438rem;
-            
-            .materialCard{
-                margin: 0;   
+
+            .materialCard {
+                margin: 0;
                 width: 14.688rem;
-                img{
+
+                img {
                     border-radius: 0.625rem;
                 }
-        
-                span{
+
+                span {
                     font-size: 1rem;
-    
+
                 }
-    
-                button{
-                    margin-top: auto;
-                    padding: 0.438rem 1.75rem;
-                    font-size: 1rem;
-                    border-radius:  0.438rem;
-                    
+
+                button {
+                    cursor: pointer;
+                    position: relative;
+                    padding: 0.5rem 1rem;
+
+                    font-weight: 600;
+                    color: transparent;
+                    border-color: transparent;
+                    border-radius: 1rem;
+
+                    background: linear-gradient(90deg, var(--orange-100), var(--orange-200) 50%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        z-index: -1;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        border-radius: .7rem;
+                        border: 0.2rem solid transparent;
+                        background: linear-gradient(90deg, var(--orange-100), var(--orange-200) 50%) border-box;
+                        -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                        mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                        -webkit-mask-composite: destination-out;
+                        mask-composite: exclude;
+                    }
+
+
+
+                    &:hover {
+                        color: white;
+                        -webkit-background-clip: padding-box;
+                        background-clip: padding-box;
+                    }
+
                 }
             }
         }
-        
-    }   
+
+    }
 }

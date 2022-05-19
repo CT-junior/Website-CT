@@ -10,26 +10,26 @@ import { SwiperSlide } from 'swiper/react';
 
 import Styles from "../styles/home.module.scss";
 
-const  imagesCarousel =  [ 
-  { 
+const imagesCarousel = [
+  {
     id: 0,
-    url : "/images/rocketseatLogo.png" , 
-    name : "Rocketseat" 
-  } , 
-  { 
+    url: "/images/rocketseatLogo.png",
+    name: "Rocketseat"
+  },
+  {
     id: 1,
-    url : "/images/ufesLogo.png" , 
-    name : "Ufes" 
-  } , 
-  { 
+    url: "/images/ufesLogo.png",
+    name: "Ufes"
+  },
+  {
     id: 2,
-    url : "/images/americanasLogo.png" , 
-    name : "Americanas" 
-  } , 
-  { 
+    url: "/images/americanasLogo.png",
+    name: "Americanas"
+  },
+  {
     id: 3,
-    url : "/images/labLogo.png" , 
-    name : "Lab" 
+    url: "/images/labLogo.png",
+    name: "Lab"
   },
   {
     id: 4,
@@ -37,9 +37,9 @@ const  imagesCarousel =  [
     name: "Servino"
   },
 
-] ;
+];
 
-export default function IndexPage(){
+export default function IndexPage() {
   return (
     <>
       <Head>
@@ -50,7 +50,7 @@ export default function IndexPage(){
           <h1>
             Soluções em
             <br />
-            <b>Tecnologia Construção Civil</b>
+            <b>Tecnologia & Construção Civil</b>
           </h1>
           <ButtonOrange>Solicitar um Diagnóstico</ButtonOrange>
         </section>
@@ -88,40 +88,40 @@ export default function IndexPage(){
           </div>
         </section>
         <section className={Styles.whyCtjuniorSection}>
-            <div className={Styles.whyCtjuniorContent}>
-              <div className={Styles.whyCtjuniorInfo}>
-                <TitleOrange>Por que a CT Junior</TitleOrange>
-                <p>Entendemos suas necessidades e construímos seus sonhos a partir de nossos projetos.</p>
-                <ul>
-                    <li>Somos uma instituição sem fins lucrativos, formada por jovens voluntários da maior universidade do Espírito Santo, e oferecemos serviço de excelência com ótimo custo benefício.</li>
-                    <li>A CT Junior se encontra no maior Centro Tecnológico do Espírito Santo, contando com apoio de professores e alunos renomados dessa instituição de elite.</li>
-                    <li>Estamos há mais de 27 anos no mercado, apresentando soluções para clientes de diversos setores. Todo nosso faturamento é reinvestido na profissionalização dos estudantes voluntários que participam do projeto.</li>
-                </ul>
-              </div>
-              <img src={'/images/studentsWorking.png'} alt="" />
-              <img src={'/images/studentsWorkingDesktop.png'} alt="" />
+          <div className={Styles.whyCtjuniorContent}>
+            <div className={Styles.whyCtjuniorInfo}>
+              <TitleOrange>Por que a CT Junior</TitleOrange>
+              <p>Entendemos suas necessidades e construímos seus sonhos a partir de nossos projetos.</p>
+              <ul>
+                <li>Somos uma instituição sem fins lucrativos, formada por jovens voluntários da maior universidade do Espírito Santo, e oferecemos serviço de excelência com ótimo custo benefício.</li>
+                <li>A CT Junior se encontra no maior Centro Tecnológico do Espírito Santo, contando com apoio de professores e alunos renomados dessa instituição de elite.</li>
+                <li>Estamos há mais de 27 anos no mercado, apresentando soluções para clientes de diversos setores. Todo nosso faturamento é reinvestido na profissionalização dos estudantes voluntários que participam do projeto.</li>
+              </ul>
             </div>
-            
+            <img src={'/images/studentsWorking.png'} alt="" />
+            <img src={'/images/studentsWorkingDesktop.png'} alt="" />
+          </div>
+
         </section>
         <section className={Styles.partnersSection}>
-            <TitleOrange>Nossos Parceiros</TitleOrange>
-            <div className={Styles.carouselContainer}>
-              <Carousel pagination>
-                {imagesCarousel.map( item =>(
-                    <SwiperSlide key={item.id}><img src={item.url} alt={item.name} /></SwiperSlide>
-                ))}
-      
-              </Carousel>
-            </div>
-            <div className={Styles.partnersLogos}>
-              {imagesCarousel.map( item => (
-                <img key={item.id} src={item.url} alt={item.name} />
+          <TitleOrange>Nossos Parceiros</TitleOrange>
+          <div className={Styles.carouselContainer}>
+            <Carousel pagination>
+              {imagesCarousel.map(item => (
+                <SwiperSlide key={item.id}><img src={item.url} alt={item.name} /></SwiperSlide>
               ))}
-            </div>
+
+            </Carousel>
+          </div>
+          <div className={Styles.partnersLogos}>
+            {imagesCarousel.map(item => (
+              <img key={item.id} src={item.url} alt={item.name} />
+            ))}
+          </div>
         </section>
         <section className={Styles.contactUs}>
           <TitleOrange>Nos conte sua ideia!</TitleOrange>
-          <TellUsForm/>       
+          <TellUsForm />
         </section>
       </main>
 

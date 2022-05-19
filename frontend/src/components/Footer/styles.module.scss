@@ -16,6 +16,12 @@
     li {
       margin-top: 0.5rem;
     }
+
+    a:hover {
+      text-decoration: underline;
+      text-underline-offset: .2rem;
+    }
+
   }
 
   &::before {
@@ -27,7 +33,7 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 1;
+    opacity: .5;
     background-image: url("../../../public/images/noise_texture.png");
     background-repeat: repeat;
     background-position: 50% 0;
@@ -35,10 +41,29 @@
 
     pointer-events: none;
   }
+
+}
+
+.footerMadeBy {
+  padding-inline: 5%;
+  max-width: 260px;
+  display: flex;
+  opacity: 0.3;
+  align-items: center;
+  justify-content: space-around;
+  background: url("../../../public/images/ct_junior_watermark.svg");
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 }
 
 .footerLogo {
   //padding: 13.875rem 0 0 0;
+  padding-inline: 5%;
+  max-width: 260px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -58,12 +83,31 @@
   }
 
   img {
-    max-width: 1.6875rem;
+    filter: invert(1);
+    margin: 10px;
+    max-width: 2rem;
   }
+
+  &:hover {
+    background-color: white;
+    transform: scale(1.05);
+
+    p {
+      color: black;
+    }
+
+    img {
+      filter: invert(0);
+    }
+
+  }
+
 }
 
 .footerTelephone {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
   margin: 0.5rem 2.725rem;
 
@@ -75,7 +119,23 @@
   }
 
   img {
-    max-width: 1.9rem;
+    filter: invert(1);
+    margin: 10px;
+    max-width: 1.5rem;
+  }
+
+  &:hover {
+    background-color: white;
+    transform: scale(1.05);
+
+    p {
+      color: black;
+    }
+
+    img {
+      filter: invert(0);
+    }
+
   }
 }
 
@@ -93,6 +153,10 @@
   img {
     width: 2rem;
     margin-right: 2rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 

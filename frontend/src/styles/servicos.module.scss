@@ -45,12 +45,14 @@
         position: relative;
         font-size: 1rem;
         margin-top: 1.5rem;
-        padding: 0.275rem;
+        padding: 0.5rem;
+        padding-left: 1rem;
 
-        ::after{
+
+        ::after {
             content: "»";
             opacity: 0;
-            transition: all 0.5s;
+            transition: all 0.2s;
         }
 
         :hover::after {
@@ -59,7 +61,7 @@
         }
     }
 
-    & + & {
+    &+& {
         margin-top: 2rem;
         padding-top: 2rem;
 
@@ -86,7 +88,7 @@
             align-items: flex-start;
 
             padding-left: 1rem;
-    
+
             img {
                 padding: unset;
             }
@@ -95,5 +97,5 @@
                 padding-left: 1rem;
             }
         }
-    }  
+    }
 }

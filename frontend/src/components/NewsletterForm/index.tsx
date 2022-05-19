@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
 
-export function NewsletterForm(){
-    return(
+export function NewsletterForm() {
+    return (
         <section className={styles.newsletterContainer}>
             <div className={styles.newsletterContent}>
                 <div className={styles.newsletterTitle}>

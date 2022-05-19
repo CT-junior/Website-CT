@@ -10,7 +10,7 @@ export default function NotFound() {
     axleY: 0,
   });
 
-  function handleMouseMove(event: MouseEvent, ) {
+  function handleMouseMove(event: MouseEvent,) {
     setMousePosition({
       axleX: - event.clientX / 50,
       axleY: - event.clientY / 50,
@@ -25,12 +25,12 @@ export default function NotFound() {
       <main onMouseMove={(e) => handleMouseMove(e)}>
         <section className={Styles.container}>
           <div className={Styles.content} >
-            <img src="/images/aviao404.png"  alt="Avião kamikaze" style={{
-                transform: `translateX(${mousePosition.axleX * 1.5}px) translateY(${mousePosition.axleY * 1.5}px)`,
-              }} />
+            <img src="/images/aviao_404.svg" alt="Avião kamikaze" style={{
+              transform: `translateX(${mousePosition.axleX * 1.5}px) translateY(${mousePosition.axleY * 1.5}px)`,
+            }} />
             <div style={{
-                transform: `translateX(${mousePosition.axleX * 1.5}px) translateY(${mousePosition.axleY * 1.5}px)`,
-              }} >
+              transform: `translateX(${mousePosition.axleX * 1.5}px) translateY(${mousePosition.axleY * 1.5}px)`,
+            }} >
               <h1>Erro 404</h1>
               <span>
                 A página que vc procura

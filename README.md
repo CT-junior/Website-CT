@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./frontend/public/images/logoverde.png" alt="CT Junior Logo" height="80px">
+  <img src="./frontend/public/images/Logo_CT_Verde.svg" alt="CT Junior Logo" height="80px">
 </p>
 
 <!-- TABLE OF CONTENTS -->

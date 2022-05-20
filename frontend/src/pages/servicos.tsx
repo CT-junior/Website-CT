@@ -76,7 +76,7 @@ export default function Servicos() {
                 <div className={styles.service}>
                     <h3>PROJETO ARQUITETÔNICO</h3>
                     <div className={styles.description}>
-                        <img src="./images/website.svg" alt="Computador com um website" />
+                        <img src="./images/arquitetonico.svg" alt="Projeto arquitetônico" />
                         <p>
                             Materialização do espaço imaginado pelo cliente juntamente com o profissional responsável. Tem a finalidade de prever possíveis problemas de execução e garantir que a obra saia como planejada.
                         </p>
@@ -89,7 +89,7 @@ export default function Servicos() {
                 <div className={styles.service}>
                     <h3>PROJETO HIDROSSANITÁRIO</h3>
                     <div className={styles.description}>
-                        <img src="./images/ecommerce.svg" alt="Computador com um website" />
+                        <img src="./images/hidrossanitario.svg" alt="Tubulaçao" />
                         <p>
                             Tem por finalidade o dimensionamento e alocação das tubulações e conexões referentes às redes de água quente, fria, esgotos e águas pluviais da edificação. Garantindo ao máximo a economia na execução, conforto e facilidade com possíveis manutenções.
                         </p>
@@ -102,7 +102,7 @@ export default function Servicos() {
                 <div className={styles.service}>
                     <h3>PROJETO ELÉTRICO</h3>
                     <div className={styles.description}>
-                        <img src="./images/sistema.svg" alt="Computador com um website" />
+                        <img src="./images/projeto_eletrico.svg" alt="Painel de luz" />
                         <p>
                             Tem por objetivo determinar a disposição e o dimensionamento dos pontos de iluminação e das tomadas, adequando-os e personalizando-os para a edificação, a fim de garantir a qualidade e a segurança nas instalações.
 
@@ -116,7 +116,7 @@ export default function Servicos() {
                 <div className={styles.service}>
                     <h3>PROJETO DE REGULARIZAÇÃO</h3>
                     <div className={styles.description}>
-                        <img src="./images/idea.svg" alt="Computador com um website" />
+                        <img src="./images/regularizacao.svg" alt="Projeto regularizado" />
                         <p>
                             Apresentação de um novo projeto para a prefeitura em caso de mudanças como reformas, ampliações ou novas construções na planta original do imóvel.
                         </p>
@@ -129,7 +129,7 @@ export default function Servicos() {
                 <div className={styles.service}>
                     <h3>PROJETO DE CAPTAÇÃO DE ÁGUA DA CHUVA</h3>
                     <div className={styles.description}>
-                        <img src="./images/idea.svg" alt="Computador com um website" />
+                        <img src="./images/captacao.svg" alt="Barris captando agua" />
                         <p>
                             Elaboramos o projeto para o redirecionamento das águas pluviais para reservatórios. Também dimensionamos todas as tubulações para a correta distribuição do volume e planejamos a disposição dos pontos de utilização para que o uso da água não potável seja prático e fácil.
 
@@ -143,7 +143,7 @@ export default function Servicos() {
                 <div className={styles.service}>
                     <h3>PROJETO DE COMBATE A INCÊNDIO E PÂNICO</h3>
                     <div className={styles.description}>
-                        <img src="./images/idea.svg" alt="Computador com um website" />
+                        <img src="./images/combate_incendio.svg" alt="Extintor e fogo" />
                         <p>
                             Para um Combate a Incêndio eficiente é necessário definir em projeto todos os parâmetros essenciais de modo a garantir a segurança e tranquilidade do estabelecimento e seus usuários, através do dimensionamento e/ou adequação dos equipamentos e das instalações capazes de prevenir, combater e permitir a evacuação de presentes em situações de incêndio.
                         </p>

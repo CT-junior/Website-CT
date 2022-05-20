@@ -29,7 +29,7 @@ export function PortfolioModal({ ...Props }: Props) {
       <img
         onClick={Props.handleCloseModal}
         className={Styles.iconClose}
-        src="/images/closeIconModal.png"
+        src="/images/closeIconModal.svg"
         alt="Close modal"
       />
       <div className={Styles.flexBox}>

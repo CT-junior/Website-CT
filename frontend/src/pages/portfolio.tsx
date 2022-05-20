@@ -41,8 +41,6 @@ const modalDataSample4: ModalData = {
   text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.Pellentesque habitant morbi tristique senectus et netus et malesuadafames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor  et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut  adipiscing."
 }
 
-
-
 export default function Portifolio() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalData, setModalData] = useState(modalDataSample1);

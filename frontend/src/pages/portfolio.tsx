@@ -41,6 +41,30 @@ const modalDataSample4: ModalData = {
   text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.Pellentesque habitant morbi tristique senectus et netus et malesuadafames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor  et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut  adipiscing."
 }
 
+const modalDataSample5: ModalData = {
+  imgSrc: "/images/civil/projetoCarlos.png",
+  title: "Projeto Carlos",
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.Pellentesque habitant morbi tristique senectus et netus et malesuadafames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor  et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut  adipiscing."
+}
+
+const modalDataSample6: ModalData = {
+  imgSrc: "/images/civil/projetoIvanitas.png",
+  title: "Projeto Ivanitas",
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.Pellentesque habitant morbi tristique senectus et netus et malesuadafames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor  et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut  adipiscing."
+}
+
+const modalDataSample7: ModalData = {
+  imgSrc: "/images/civil/projetoOrlene.png",
+  title: "Projeto Orlene",
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.Pellentesque habitant morbi tristique senectus et netus et malesuadafames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor  et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut  adipiscing."
+}
+
+const modalDataSample8: ModalData = {
+  imgSrc: "/images/civil/projetoMarcelo.png",
+  title: "Projeto Marcelo",
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.Pellentesque habitant morbi tristique senectus et netus et malesuadafames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor  et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut  adipiscing."
+}
+
 
 
 export default function Portifolio() {
@@ -80,13 +104,13 @@ export default function Portifolio() {
               </div>
 
               <div className={Styles.carouselContainer}>
-                <Carousel 
-                  slidesPerView={Number(`${width < 475 ? 2.5 : 3.5}`)} 
-                  autoplay={false}                        
+                <Carousel
+                  slidesPerView={Number(`${width < 475 ? 2.5 : 3.5}`)}
+                  autoplay={false}
                   navigation={{
                     nextEl: ".next-tec",
                     prevEl: ".prev-tec",
-                }}
+                  }}
 
                 >
                   <SwiperSlide onClick={() => handleOpenModal(modalDataSample1)} className={Styles.card}>
@@ -105,31 +129,31 @@ export default function Portifolio() {
               </div>
             </div>
             <div className={Styles.contentCards}>
-            <div className={Styles.carouselHeader}>
-              <h3>CONSTRUÇÃO CIVIL</h3>
-              <button className="prev-civil"><img src="/images/arrowLeft.svg" alt="" /></button>
-              <button className="next-civil"><img src="/images/arrowRight.svg" alt="" /></button>
-            </div>
+              <div className={Styles.carouselHeader}>
+                <h3>CONSTRUÇÃO CIVIL</h3>
+                <button className="prev-civil"><img src="/images/arrowLeft.svg" alt="" /></button>
+                <button className="next-civil"><img src="/images/arrowRight.svg" alt="" /></button>
+              </div>
               <div className={Styles.carouselContainer}>
-                <Carousel 
-                  slidesPerView={Number(`${width < 475 ? 2.5 : 3.5}`)} 
+                <Carousel
+                  slidesPerView={Number(`${width < 475 ? 2.5 : 3.5}`)}
                   autoplay={false}
                   navigation={{
                     nextEl: ".next-civil",
                     prevEl: ".prev-civil",
                   }}
                 >
-                  <SwiperSlide onClick={() => handleOpenModal(modalDataSample1)} className={Styles.card}>
-                    <img src="/images/dualEng.png" alt="" />
+                  <SwiperSlide onClick={() => handleOpenModal(modalDataSample5)} className={Styles.card}>
+                    <img src="/images/civil/projetoCarlos.png" alt="" />
                   </SwiperSlide>
-                  <SwiperSlide onClick={() => handleOpenModal(modalDataSample2)} className={Styles.card}>
-                    <img src="/images/sindpes.png" alt="" />
+                  <SwiperSlide onClick={() => handleOpenModal(modalDataSample6)} className={Styles.card}>
+                    <img src="/images/civil/projetoIvanitas.png" alt="" />
                   </SwiperSlide>
-                  <SwiperSlide onClick={() => handleOpenModal(modalDataSample3)} className={Styles.card}>
-                    <img src="/images/eurolog.png" alt="" />
+                  <SwiperSlide onClick={() => handleOpenModal(modalDataSample7)} className={Styles.card}>
+                    <img src="/images/civil/projetoOrlene.png" alt="" />
                   </SwiperSlide>
-                  <SwiperSlide onClick={() => handleOpenModal(modalDataSample4)} className={Styles.card}>
-                    <img src="/images/pcMil.png" alt="" />
+                  <SwiperSlide onClick={() => handleOpenModal(modalDataSample8)} className={Styles.card}>
+                    <img src="/images/civil/projetoMarcelo.png" alt="" />
                   </SwiperSlide>
                 </Carousel>
               </div>
@@ -137,8 +161,8 @@ export default function Portifolio() {
           </div>
         </section>
       </main>
-      
-      
+
+
       <PortfolioModal handleCloseModal={handleCloseModal} modalIsOpen={modalIsOpen} modalData={modalData} />
     </>
   );

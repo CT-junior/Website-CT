@@ -3,4 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+const withTM = require('next-transpile-modules')(['react-simple-captcha']);
+
+module.exports = withTM(nextConfig);

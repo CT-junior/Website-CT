@@ -1,41 +1,19 @@
+import 'react-toastify/dist/ReactToastify.css';
+
 import { Input } from "../Input";
 import { TextArea } from "../TextArea";
 import { Select } from "../Select";
 
 import { SubmitHandler, useForm } from "react-hook-form";
-import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { leadFormData, leadFormSchema, toastOptions } from './utils';
 
 import Styles from "./styles.module.scss";
 import { ButtonOrange } from "../../ButtonOrange";
 import { useEffect, useState } from "react";
+import { loadCaptchaEnginge, LoadCanvasTemplateNoReload, validateCaptcha } from 'react-simple-captcha';
 
-
-type leadFormData = {
-  name: string;
-  email: string;
-  tel: number;
-  area: string;
-  idea: string;
-  investment: number;
-};
-
-const phoneRegExp =
-  /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
-
-const leadFormSchema = yup.object().shape({
-  name: yup.string().required("Nome obrigatório."),
-  email: yup.string().required("E-mail obrigatório.").email("E-mail inválido"),
-  tel: yup
-    .string()
-    .required("Número de telefone obrigatório.")
-    .matches(phoneRegExp, "Número de telefone inválido.")
-    .min(10, "Número de telefone inválido.")
-    .max(11, "Número de telefone inválido."),
-  area: yup.string().required().notOneOf([null, 'default'], 'Seleção de área obrigatória.'),
-  idea: yup.string().required("Campo obrigatório."),
-  investment: yup.number(),
-});
+import { toast, ToastContainer } from "react-toastify";
 
 export function TellUsForm() {
   const {
@@ -43,6 +21,7 @@ export function TellUsForm() {
     handleSubmit,
     watch,
     formState: { errors },
+    reset
   } = useForm({
     resolver: yupResolver(leadFormSchema),
   });
@@ -62,11 +41,50 @@ export function TellUsForm() {
     } else {
       setPriceRange("Mais de 40k");
     }
-  });
+  }, [investmentValue]);
 
-  const handleFormSubmit: SubmitHandler<leadFormData> = (values) => {
-    console.log(values);
+  const handleFormSubmit: SubmitHandler<leadFormData> = async (values) => {
+    if (!validateCaptcha(values.captcha)) {
+      toast.error(
+        'Os caractéres da validação não são iguais!',
+        toastOptions
+      );
+      return;
+    }
+    toast.loading("Enviando.", toastOptions);
+
+    const body = JSON.stringify({
+      name: values.name,
+      email: values.email,
+      contact: values.tel,
+      costPretension: PriceRange,
+      area: values.area,
+      idea: values.idea
+    })
+
+    try {
+      await fetch('/api/email', {
+        method: "POST",
+        body: body
+      })
+      toast.dismiss();
+      toast.success(
+        'E-mail enviado com sucesso!',
+        toastOptions
+      )
+      reset();
+    } catch (error) {
+      toast.error(
+        'Ocorreu um erro, tente novamente mais tarde!',
+        toastOptions
+      );
+    }
   };
+
+  // Component did mount
+  useEffect(() => {
+    loadCaptchaEnginge(6);
+  }, [])
 
   return (
     <form
@@ -120,7 +138,17 @@ export function TellUsForm() {
         {...register("idea")}
       />
 
+      <Input
+        name="captcha"
+        label="Reescreva os caractéres abaixo para verificar que é humano!"
+        error={errors.captcha}
+        {...register("captcha")}
+      />
+
+      <LoadCanvasTemplateNoReload />
+
       <ButtonOrange type="submit">Ok, enviar!</ButtonOrange>
+      <ToastContainer />
     </form>
   );
 }

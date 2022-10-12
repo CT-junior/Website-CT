@@ -9,7 +9,7 @@
 }
 
 .modalContent {
-  position: relative;
+  // position: relative;
   width: 84.72vw;
   position: absolute;
   top: 50%;
@@ -22,6 +22,10 @@
   background: var(--gray-150);
   border-radius: 0.625rem;
   padding: 1.438rem 2.25rem;
+
+  img {
+    border-radius: 1rem;
+  }
 
 
   .title {
@@ -88,8 +92,14 @@
   }
 
   .imageModal {
+    object-fit: contain;
+    border-radius: 2rem;
+    width: 250px;
+    height: 250px;
     display: block;
+    padding: 10px;
     margin: 0 auto;
+
   }
 
   .descriptionModal {
@@ -120,7 +130,6 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 
-
     .title {
       h3 {
         font-size: 1.563rem;
@@ -136,8 +145,10 @@
 
       .imageModal {
         margin-left: 1.625rem;
-        max-width: 235px;
-        border-radius: 0.7rem;
+        object-fit: contain;
+        border-radius: 2rem;
+        max-width: 250px;
+        max-height: 250px;
       }
 
       .descriptionModal {

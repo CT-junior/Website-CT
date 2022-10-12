@@ -3,12 +3,14 @@ import Head from "next/head";
 
 import { TellUsForm } from "../components/Form/TellUsForm";
 import { TitleOrange } from "../components/TitleOrange";
-import { ButtonOrange } from "../components/ButtonOrange";
+import { ButtonOrange, ButtonOrangeDisplay } from "../components/ButtonOrange";
 
 import { Carousel } from "../components/Carousel";
 import { SwiperSlide } from 'swiper/react';
 
 import Styles from "../styles/home.module.scss";
+import { url } from "inspector";
+import { useRef } from "react";
 
 const imagesCarousel = [
   {
@@ -23,23 +25,28 @@ const imagesCarousel = [
   },
   {
     id: 2,
-    url: "/images/americanasLogo.png",
-    name: "Americanas"
+    url: "/images/EloGroup.svg",
+    name: "EloGroup"
   },
   {
     id: 3,
-    url: "/images/labLogo.png",
-    name: "Lab"
-  },
-  {
-    id: 4,
-    url: "/images/servinoLogo.png",
-    name: "Servino"
+    url: "/images/IvanLogo.svg",
+    name: "Ivan Gerhardt"
   },
 
 ];
 
 export default function IndexPage() {
+  const ref = useRef(null);
+  const refMobile = useRef(null)
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({ block: 'start', inline: 'start', behavior: 'smooth' });
+  };
+
+  const handleClickMobile = () => {
+    refMobile.current?.scrollIntoView({ block: 'end', inline: 'end', behavior: 'smooth' });
+  };
   return (
     <>
       <Head>
@@ -47,12 +54,17 @@ export default function IndexPage() {
       </Head>
       <main>
         <section className={Styles.sectionInitial}>
-          <h1>
-            Soluções em
-            <br />
-            <b>Tecnologia & Construção Civil</b>
-          </h1>
-          <ButtonOrange>Solicitar um Diagnóstico</ButtonOrange>
+          <div className={Styles.sectionInitialContent}>
+            <h1>
+              Soluções em
+              <br />
+              <b>Tecnologia & Construção Civil</b>
+            </h1>
+            <svg />
+          </div>
+          <div className={Styles.sectionInitialInfo}>
+            <ButtonOrange onClick={handleClick} >Solicitar um Diagnóstico</ButtonOrange>
+          </div>
         </section>
         <section className={Styles.servicesSection}>
           <div className={Styles.servicesContent}>
@@ -84,9 +96,9 @@ export default function IndexPage() {
               </div>
             </div>
 
-            <ButtonOrange>Solicitar um Diagnóstico</ButtonOrange>
+            <ButtonOrangeDisplay onClick={handleClickMobile}>Solicitar um Diagnóstico</ButtonOrangeDisplay>
           </div>
-        </section>
+        </section >
         <section className={Styles.whyCtjuniorSection}>
           <div className={Styles.whyCtjuniorContent}>
             <div className={Styles.whyCtjuniorInfo}>
@@ -106,9 +118,9 @@ export default function IndexPage() {
         <section className={Styles.partnersSection}>
           <TitleOrange>Nossos Parceiros</TitleOrange>
           <div className={Styles.carouselContainer}>
-            <Carousel pagination>
+            <Carousel pagination >
               {imagesCarousel.map(item => (
-                <SwiperSlide key={item.id}><img src={item.url} alt={item.name} /></SwiperSlide>
+                <SwiperSlide key={item.id}><img src={item.url} alt={item.name} max-height={100} max-width={300} /></SwiperSlide>
               ))}
 
             </Carousel>
@@ -117,13 +129,14 @@ export default function IndexPage() {
             {imagesCarousel.map(item => (
               <img key={item.id} src={item.url} alt={item.name} />
             ))}
+            <div ref={ref} />
           </div>
         </section>
-        <section className={Styles.contactUs}>
+        <section className={Styles.contactUs} ref={refMobile} >
           <TitleOrange>Nos conte sua ideia!</TitleOrange>
           <TellUsForm />
         </section>
-      </main>
+      </main >
 
     </>
   );

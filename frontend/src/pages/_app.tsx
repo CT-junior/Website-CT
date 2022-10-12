@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>CT JUNIOR</title>
       </Head>
       <Header />
-      <WhatsappButton number={"5527998422438"} />
+      <WhatsappButton number={"5527997779356"} />
       <Component {...pageProps} />
       <Footer />
     </>

@@ -1,16 +1,16 @@
-.carouselContainer{
+.carouselContainer {
     margin: 0 auto;
     width: 100%;
-    
-    > div{
+
+    >div {
         padding: 0.938rem 1rem 1rem 0.65rem;
     }
 
 }
 
-@media screen and(min-width:1200px){
-    .carouselContainer{
-        > div{
+@media screen and(min-width:1200px) {
+    .carouselContainer {
+        >div {
             padding-top: 1.563rem;
         }
     }

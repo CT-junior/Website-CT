@@ -147,7 +147,9 @@ export function TellUsForm() {
 
       <LoadCanvasTemplateNoReload />
 
-      <ButtonOrange type="submit">Ok, enviar!</ButtonOrange>
+      <div className={Styles.buttonContainer}>
+        <ButtonOrange type="submit">Ok, enviar!</ButtonOrange>
+      </div>
       <ToastContainer />
     </form>
   );

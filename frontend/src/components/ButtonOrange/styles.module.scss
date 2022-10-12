@@ -21,7 +21,53 @@
 .button {
   cursor: pointer;
   position: relative;
-  // padding: 0.625rem 0.938rem;
+  margin-block: 50px;
+  padding: 0.625rem 0.938rem;
+
+  // font-size: 1.6rem;
+  font-weight: 600;
+  color: transparent;
+  // background: transparent;
+  border-color: transparent;
+  border-radius: 1rem;
+
+  background: linear-gradient(90deg, var(--orange-100), var(--orange-200) 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  // -webkit-text-fill-color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: .7rem;
+    border: 0.2rem solid transparent;
+    background: linear-gradient(90deg, var(--orange-100), var(--orange-200) 50%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+
+
+
+  &:hover {
+    color: white;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+
+}
+
+.buttonDisplay {
+  cursor: pointer;
+  position: relative;
+  margin-block: 50px;
+  padding: 0.625rem 0.938rem;
 
   // font-size: 1.6rem;
   font-weight: 600;
@@ -63,6 +109,10 @@
 }
 
 @media screen and(min-width:1200px) {
+  .buttonDisplay {
+    display: none;
+  }
+
   .button {
     // padding: 0.175rem 0.75rem;
     // font-size: 1.3rem;

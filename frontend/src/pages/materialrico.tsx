@@ -46,6 +46,11 @@ export default function MaterialRico() {
             <span>Planilha de gestão de gastos</span>
             <ButtonOrange href="https://empresa.ctjunior.com.br/planilha-gestao-de-gastos" target="_blank"> Baixar</ButtonOrange>
           </div>
+          <div className={Styles.materialCard}>
+            <img src="/images/material_rico/ProjetosArquitetonicos.jpg" alt="" />
+            <span>Projeto arquitetônico: otimize seu tempo e reduza o caminho até seu projeto dos sonhos!</span>
+            <ButtonOrange href="https://empresa.ctjunior.com.br/lp-planilha-civil-checklist-projeto-arquitetonico" target="_blank"> Baixar</ButtonOrange>
+          </div>
         </div>
       </section>
     </main>

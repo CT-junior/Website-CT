@@ -46,6 +46,7 @@
         margin-left: 15.14vw;
 
         img {
+          object-fit: contain;
           cursor: pointer;
           width: 6.436rem !important;
           height: 6.436rem !important;
@@ -118,9 +119,11 @@
           margin-left: 15.14vw;
 
           img {
+            object-fit: contain;
             width: 14.688rem !important;
             height: 14.688rem !important;
             border-radius: 0.625rem;
+
           }
         }
 

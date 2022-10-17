@@ -10,69 +10,77 @@
         text-align: justify;
     }
 
-    .materialCard {
-        margin: 2rem auto;
-        width: 9rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .materialCards {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(auto-fit, 10rem);
+        justify-content: space-evenly;
+
+        .materialCard {
+            margin: 2rem auto;
+            width: 9rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
 
 
-        img {
-            width: 100%;
-            border-radius: 0.382rem;
-        }
-
-        span {
-            margin: 0.75rem 0;
-            width: 95%;
-            font-size: 0.75rem;
-            text-align: center;
-        }
-
-        button {
-            cursor: pointer;
-            position: relative;
-            padding: 0.5rem 1rem;
-
-            font-weight: 600;
-            color: transparent;
-
-            border-color: transparent;
-            border-radius: 1rem;
-
-            background: linear-gradient(90deg, var(--orange-100), var(--orange-200) 50%);
-            -webkit-background-clip: text;
-            background-clip: text;
-
-            &::before {
-                content: "";
-                position: absolute;
-                z-index: -1;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                border-radius: .7rem;
-                border: 0.2rem solid transparent;
-                background: linear-gradient(90deg, var(--orange-100), var(--orange-200) 50%) border-box;
-                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-                mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-                -webkit-mask-composite: destination-out;
-                mask-composite: exclude;
+            img {
+                width: 100%;
+                border-radius: 0.382rem;
             }
 
-
-
-            &:hover {
-                color: white;
-                -webkit-background-clip: padding-box;
-                background-clip: padding-box;
+            span {
+                margin: 0.75rem 0;
+                width: 95%;
+                font-size: 0.75rem;
+                text-align: center;
             }
 
+            button {
+                cursor: pointer;
+                position: relative;
+                padding: 0.5rem 1rem;
+
+                font-weight: 600;
+                color: transparent;
+
+                border-color: transparent;
+                border-radius: 1rem;
+
+                background: linear-gradient(90deg, var(--orange-100), var(--orange-200) 50%);
+                -webkit-background-clip: text;
+                background-clip: text;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    border-radius: .7rem;
+                    border: 0.2rem solid transparent;
+                    background: linear-gradient(90deg, var(--orange-100), var(--orange-200) 50%) border-box;
+                    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                    -webkit-mask-composite: destination-out;
+                    mask-composite: exclude;
+                }
+
+
+
+                &:hover {
+                    color: white;
+                    -webkit-background-clip: padding-box;
+                    background-clip: padding-box;
+                }
+
+            }
         }
     }
+
 }
 
 @media screen and(min-width:1200px) {
@@ -89,6 +97,7 @@
 
             display: flex;
             flex-wrap: wrap;
+            justify-content: flex-start;
 
             column-gap: 4.25rem;
             row-gap: 3.438rem;
@@ -99,6 +108,7 @@
 
                 img {
                     border-radius: 0.625rem;
+                    box-shadow: 0rem 0.25rem 0.25rem 0 rgb(0 0 0 / 25%);
                 }
 
                 span {

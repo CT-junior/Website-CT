@@ -1,3 +1,13 @@
+@keyframes expand {
+    from {
+        transform: scaleX(0)
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
 .headerContainer {
     .headerContent {
         .header {
@@ -212,10 +222,13 @@
                             left: 12.59%;
 
                             width: 74.81%;
-                            height: 0.188rem;
+                            height: .3rem;
 
                             background-image: linear-gradient(90deg, var(--orange-100), var(--orange-200));
-                            border-radius: 0.625rem;
+                            border-radius: 1rem;
+                            animation: .3s expand;
+
+
 
                         }
                     }

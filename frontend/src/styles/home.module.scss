@@ -3,13 +3,41 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding-block: 1rem;
 
-  height: 8.375rem;
+  min-height: 8.375rem;
   background-color: var(--green-200);
-  background-image: url("./../../public/images/Logo_CT_Simples_Branca.svg");
+  // background-image: url("./../../public/images/Logo_CT_Simples_Branca.svg");
   background-repeat: no-repeat;
-  background-position: top 0.73rem right 3.625rem;
-  background-size: 4.375rem;
+
+  .sectionInitialContent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      // background-color: red;
+      background-image: url("./../../public/images/Logo_CT_Simples_Branca.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+      align-self: center;
+      width: 10rem;
+      max-width: 120px;
+      height: 10rem;
+      max-height: 120px;
+      margin: 0;
+
+    }
+
+  }
 
   h1 {
     color: var(--white);
@@ -17,9 +45,12 @@
     font-size: 1.25rem;
     font-weight: 700;
     text-transform: uppercase;
+    margin: auto 0;
+    max-width: 430px;
+    padding-block: 1rem;
 
-    width: 82.5vw;
-    max-width: 410px;
+    // width: 82.5vw;
+    // max-width: 410px;
 
     b {
       display: inline-flex;
@@ -27,12 +58,23 @@
       font-family: Work Sans, sans-serif;
       font-size: 1.875rem;
       font-weight: 900;
+      max-width: 420px;
     }
+  }
+
+  .sectionInitialInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   button {
     display: none;
   }
+
 }
 
 .servicesSection {
@@ -166,6 +208,9 @@
 
   >img {
     object-fit: fill;
+    align-items: center;
+    max-width: 300px;
+    max-height: 100px;
     width: 100%;
     height: 6rem;
     border-radius: 0.275rem;
@@ -179,9 +224,85 @@
 
 }
 
+@media screen and(min-width:647px) {
+  .sectionInitial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+
+    height: 8.375rem;
+    background-color: var(--green-200);
+    // background-image: url("./../../public/images/Logo_CT_Simples_Branca.svg");
+    background-repeat: no-repeat;
+
+    .sectionInitialContent {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: auto;
+      align-self: center;
+      justify-content: center;
+
+      svg {
+        // background-color: red;
+        background-image: url("./../../public/images/Logo_CT_Simples_Branca.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        align-self: center;
+        max-width: 120px;
+        height: 20vw;
+        max-height: 120px;
+        margin: 0;
+
+        svg::after {
+          background-color: rebeccapurple;
+          background-image: url("../../public/images/noise_texture.png");
+        }
+      }
+
+    }
+
+    h1 {
+      color: var(--white);
+      font-family: "PT Sans Narrow", sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: auto 0;
+      width: 82.5vw;
+      max-width: 410px;
+
+      b {
+        display: inline-flex;
+        margin-top: -0.375rem;
+        font-family: Work Sans, sans-serif;
+        font-size: 1.875rem;
+        font-weight: 900;
+      }
+    }
+
+    .sectionInitialInfo {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      display: none;
+    }
+
+  }
+}
+
 @media screen and(min-width:1200px) {
   .sectionInitial {
-    background-image: url("./../../public/images/Logo_CT_Simples_Branca.svg");
     background-size: 17.938rem;
     background-position: top 6.75rem right 11.875rem;
 
@@ -192,10 +313,35 @@
     align-items: flex-start;
     border-radius: 0 0 2.5rem 2.5rem;
 
+    .sectionInitialContent {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: auto;
+      align-self: center;
+      justify-content: center;
+
+      svg {
+        // background-color: red;
+        background-image: url("./../../public/images/Logo_CT_Simples_Branca.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        align-self: center;
+        width: 19rem;
+        max-width: 320px;
+        height: 19rem;
+        max-height: 320px;
+        margin: 0;
+
+
+      }
+    }
+
     h1 {
-      width: unset;
+      width: 82.5vw;
       max-width: 43.75rem;
-      margin-left: 18.05vw;
 
       position: relative;
       z-index: 2;
@@ -210,6 +356,7 @@
         width: 100%;
         font-size: 4.375rem;
         line-height: 6.25rem;
+        max-width: none;
       }
     }
 
@@ -407,6 +554,8 @@
 
       img {
         width: auto;
+        max-width: 300px;
+        max-height: 100px;
         transition: .3s;
 
         &:hover {

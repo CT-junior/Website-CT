@@ -40,7 +40,7 @@ export function Footer() {
                         <a target="_blank" href="https://www.instagram.com/ctjuniorufes/" rel="noopener noreferrer">
                             <img src="./images/instaLogo.svg" alt="logo instagram" />
                         </a>
-                        <a target="_blank" href="https://www.facebook.com/ufesctjunior/" rel="noopener noreferrer">
+                        <a target="_blank" href="https://www.facebook.com/ctjuniorufes" rel="noopener noreferrer">
                             <img src="./images/faceLogo.svg" alt="logo facebook" />
                         </a>
                         <a target="_blank" href="https://www.linkedin.com/company/ct-junior/" rel="noopener noreferrer">

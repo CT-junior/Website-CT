@@ -181,10 +181,10 @@ export default function Portifolio() {
                     <img src="/images/civil/projetoAna&Rita.png" alt="" />
                   </SwiperSlide>
                   <SwiperSlide onClick={() => handleOpenModal(modalDataSampleCivil5)} className={Styles.card}>
-                    <img src="/images/civil/projetoAruanã.png" alt="" />
+                    <img src="/images/civil/projetoAruana.png" alt="" />
                   </SwiperSlide>
                   <SwiperSlide onClick={() => handleOpenModal(modalDataSampleCivil6)} className={Styles.card}>
-                    <img src="/images/civil/projetoSicoob.png" alt="" />
+                    <img src="/images/civil/projetoSicob.png" alt="" />
                   </SwiperSlide>
                 </Carousel>
               </div>

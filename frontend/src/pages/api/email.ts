@@ -18,7 +18,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
             let info = await transporter.sendMail({
                 from: `"${name} via Website" <${email}>`, // sender address
-                to: "contato@ctjunior.com.br", // list of receivers
+                to: "eric.sabino@ctjunior.com.br", // list of receivers
                 subject: "Contato feito pelo Website ✔", // Subject line
                 html: `<b>Contato feito pelo website!</b><br><br>
             Nome: ${name}<br>

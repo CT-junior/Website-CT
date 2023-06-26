@@ -11,6 +11,7 @@ type EbookInfo = {
   introduction: string;
   body: string;
   conclusion: string;
+  ebookFileLink: string;
 }
 
 export default function EbookDownload() {
@@ -21,12 +22,7 @@ export default function EbookDownload() {
   }
 
   const [thisEbookInfo, setThisEbookInfo] = useState<EbookInfo>({
-    key: '',
-    tittle: '',
-    highlighted: '',
-    introduction: '',
-    body: '',
-    conclusion: ''
+    key: '', tittle: '', highlighted: '', introduction: '', body: '', conclusion: '', ebookFileLink: ''
   });
 
   useEffect(() => {
@@ -44,11 +40,50 @@ export default function EbookDownload() {
   const [phone, setPhone] = useState('');
   const [company, setCompany] = useState('');
   const [job, setJob] = useState('');
+  const [captchAnswer, setCaptchaAnswer] = useState('');
 
-  const HandleFormSubmit = () => {
+  const [captcha1, setCaptcha1] = useState(Math.floor(Math.random() * 15) + 1);
+  const [captcha2, setCaptcha2] = useState(Math.floor(Math.random() * 15) + 1);
 
+  const HandleFormSubmit = async (e) => {
 
+    e.preventDefault();
 
+    const body = JSON.stringify({
+      name: name,
+      email: email,
+      phone: phone,
+      company: company,
+      job: job,
+      ebookName: thisEbookInfo.tittle,
+    })
+
+    const re = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    if (!re.test(email)) {
+      alert("Por favor, insira um email válido");
+      setEmail('');
+    }
+
+    if (+captchAnswer !== captcha1 + captcha2) {
+      alert("Captcha incorreto, tente novamente");
+
+      setCaptcha1(Math.floor(Math.random() * 15) + 1);
+      setCaptcha2(Math.floor(Math.random() * 15) + 1);
+      setCaptchaAnswer('');
+    }
+    else {
+      try {
+        await fetch('/api/downloadEbookEmail', {
+          method: "POST",
+          body: body
+        })
+        console.log("email enviado com sucesso");
+      } catch (error) {
+        console.log("Erro ao enviar email");
+      }
+
+      window.open(thisEbookInfo.ebookFileLink, '_blank');
+    }
   }
 
   return (
@@ -74,15 +109,22 @@ export default function EbookDownload() {
             Baixe esse Ebook e saiba mais sobre o assunto!
           </h3>
         </div>
-        <form className={Styles.form} onSubmit={() => HandleFormSubmit}>
+        <form className={Styles.form} onSubmit={(e) => HandleFormSubmit(e)}>
           <h2 className={Styles.formTittle}><b>Preencha o formulário abaixo<br />e acesse o conteúdo</b></h2>
           <input type="text" placeholder="Nome*" className={Styles.input} onChange={(e) => setName(e.target.value)} required />
-          <input type="text" placeholder="Email*" className={Styles.input} onChange={(e) => setEmail(e.target.value)} required />
+          <input value={email} type="text" placeholder="Email*" className={Styles.input} onChange={(e) => setEmail(e.target.value)} required />
           <input type="tel" placeholder="Telefone*" className={Styles.input} onChange={(e) => setPhone(e.target.value)} required />
           <input type="text" placeholder="Empresa*" className={Styles.input} onChange={(e) => setCompany(e.target.value)} required />
           <input type="text" placeholder="Cargo*" className={Styles.input} onChange={(e) => setJob(e.target.value)} required />
-          <input type="text" placeholder="x + y = ?" className={Styles.input} required />
-          <button className={Styles.ctaButton}>DOWNLOAD</button>
+          <h3>{captcha1} + {captcha2} = ?</h3>
+          <input
+            placeholder="Digite o valor acima"
+            type="text"
+            className={Styles.input}
+            onChange={(e) => setCaptchaAnswer(e.target.value)}
+            required
+          />
+          <button type="submit" className={Styles.ctaButton}>DOWNLOAD</button>
         </form>
       </div>
     </main>

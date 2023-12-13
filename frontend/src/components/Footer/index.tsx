@@ -30,7 +30,7 @@ export function Footer() {
                     <div className={styles.footerTelephone}>
                         <img src="./images/telefone.svg" alt="icon de telefone" />
                         <p>(27) 3335-2680</p>
-                        <p>(27) 99968-3252</p>
+                        <p>(27) 99643-1574</p>
                     </div>
                 </div>
 

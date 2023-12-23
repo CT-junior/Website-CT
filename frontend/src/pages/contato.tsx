@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { TellUsForm } from "../components/Form/TellUsForm";
+import { ButtonOrange, ButtonOrangeDisplay } from "../components/ButtonOrange";
 
 import { TitleOrange } from "../components/TitleOrange";
 

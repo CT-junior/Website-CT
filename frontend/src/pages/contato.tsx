@@ -21,7 +21,7 @@ export default function Contato() {
                     </div>
 
                 </section> */}
-                <ButtonOrangeDisplay><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Contate um consultor!</a></ButtonOrangeDisplay>
+                <ButtonOrange><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Contate um consultor!</a></ButtonOrange>
 
                 <section className={Styles.ourLocationContainer}>
                     <div className={Styles.ourLocationContent}>

@@ -96,7 +96,7 @@ export default function IndexPage() {
               </div>
             </div>
 
-            <ButtonOrangeDisplay onClick={handleClickMobile}>Solicitar um Diagnóstico</ButtonOrangeDisplay>
+            <ButtonOrangeDisplay><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Solicitar um Diagnóstico</a></ButtonOrangeDisplay>
           </div>
         </section >
         <section className={Styles.whyCtjuniorSection}>
@@ -133,8 +133,9 @@ export default function IndexPage() {
           </div>
         </section>
         <section className={Styles.contactUs} ref={refMobile} >
-          <TitleOrange>Nos conte sua ideia!</TitleOrange>
-          <TellUsForm />
+          {/* <TitleOrange>Nos conte sua ideia!</TitleOrange> */}
+          {/* <TellUsForm /> */}
+          <ButtonOrangeDisplay><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Contate um consultor!</a></ButtonOrangeDisplay>
         </section>
       </main >
 

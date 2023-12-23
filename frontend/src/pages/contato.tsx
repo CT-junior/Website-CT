@@ -13,13 +13,14 @@ export default function Contato() {
             </Head>
 
             <main>
-                <section className={Styles.tellUsContainer}>
+                {/* <section className={Styles.tellUsContainer}>
                     <div className={Styles.tellUsContent}>
                         <TitleOrange>Nos conte sua ideia!</TitleOrange>
                         <TellUsForm />
                     </div>
 
-                </section>
+                </section> */}
+                <ButtonOrangeDisplay><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Contate um consultor!</a></ButtonOrangeDisplay>
 
                 <section className={Styles.ourLocationContainer}>
                     <div className={Styles.ourLocationContent}>

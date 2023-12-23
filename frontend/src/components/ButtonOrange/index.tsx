@@ -2,7 +2,7 @@ import Styles from './styles.module.scss'
 
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    children: React.ReactNode,
+    children?: React.ReactNode,
     href?: string,
     target?: string,
 }

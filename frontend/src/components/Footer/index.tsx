@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
-import { NewsletterForm } from '../NewsletterForm';
+// import { NewsletterForm } from '../NewsletterForm';
 import styles from './styles.module.scss';
 //import MailchimpSubscribe from "react-mailchimp-subscribe";
 
@@ -8,7 +8,7 @@ export function Footer() {
     return (
         <footer className={styles.footerContainer}>
             <div className={styles.footerContent}>
-                <NewsletterForm />
+                {/* <NewsletterForm /> */}
 
                 <img className={styles.footerLogo} src='./images/Logo_CT_Branca_Vertical.svg' alt="Logo da Empresa Vertical" />
                 <nav className={styles.links}>
@@ -18,7 +18,7 @@ export function Footer() {
                         <li><Link href='/servicos'>Servicos</Link></li>
                         <li><Link href='/portfolio'>Portfólio</Link></li>
                         <li><Link href='/contato'>Contato</Link></li>
-                        <li><Link href='/materialrico'>Material</Link></li>
+                        {/* <li><Link href='/materialrico'>Material</Link></li> */}
                     </ul>
                 </nav>
 
@@ -29,7 +29,7 @@ export function Footer() {
                     </div>
                     <div className={styles.footerTelephone}>
                         <img src="./images/telefone.svg" alt="icon de telefone" />
-                        <p>(27) 3335-2680</p>
+                        {/* <p>(27) 3335-2680</p> */}
                         <p>(27) 99643-1574</p>
                     </div>
                 </div>

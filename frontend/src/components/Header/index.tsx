@@ -35,9 +35,9 @@ export function Header() {
                         <ActiveLink href='/portfolio' activeClassName={Styles.active}>
                             <a>Portfólio</a>
                         </ActiveLink>
-                        <ActiveLink href='/materialrico' activeClassName={Styles.active}>
+                        {/* <ActiveLink href='/materialrico' activeClassName={Styles.active}>
                             <a>Material Rico</a>
-                        </ActiveLink>
+                        </ActiveLink> */}
                         <ActiveLink href='/contato' activeClassName={Styles.active}>
                             <a>Contato</a>
                         </ActiveLink>

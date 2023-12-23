@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { NewsletterForm } from "../components/NewsletterForm";
+// import { NewsletterForm } from "../components/NewsletterForm";
 
 import { TitleOrange } from "../components/TitleOrange";
 

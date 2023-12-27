@@ -40,9 +40,9 @@ export default function IndexPage() {
   const ref = useRef(null);
   const refMobile = useRef(null)
 
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ block: 'start', inline: 'start', behavior: 'smooth' });
-  };
+  // const handleClick = () => {
+  //   ref.current?.scrollIntoView({ block: 'start', inline: 'start', behavior: 'smooth' });
+  // };
 
   const handleClickMobile = () => {
     refMobile.current?.scrollIntoView({ block: 'end', inline: 'end', behavior: 'smooth' });
@@ -63,7 +63,7 @@ export default function IndexPage() {
             <svg />
           </div>
           <div className={Styles.sectionInitialInfo}>
-            <ButtonOrange onClick={handleClick} >Solicitar um Diagnóstico</ButtonOrange>
+            <ButtonOrange><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Solicitar um Diagnóstico</a></ButtonOrange>
           </div>
         </section>
         <section className={Styles.servicesSection}>
@@ -95,8 +95,6 @@ export default function IndexPage() {
                 </p>
               </div>
             </div>
-
-            <ButtonOrangeDisplay onClick={handleClickMobile}>Solicitar um Diagnóstico</ButtonOrangeDisplay>
           </div>
         </section >
         <section className={Styles.whyCtjuniorSection}>
@@ -133,8 +131,8 @@ export default function IndexPage() {
           </div>
         </section>
         <section className={Styles.contactUs} ref={refMobile} >
-          <TitleOrange>Nos conte sua ideia!</TitleOrange>
-          <TellUsForm />
+          {/* <TitleOrange>Nos conte sua ideia!</TitleOrange> */}
+          {/* <TellUsForm /> */}
         </section>
       </main >
 

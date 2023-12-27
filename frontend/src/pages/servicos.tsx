@@ -26,7 +26,7 @@ export default function Servicos() {
                         </p>
                     </div>
                     <div className={styles.contact}>
-                        <ButtonOrange><Link href="/contato">Contate um consultor</Link></ButtonOrange>
+                        <ButtonOrange><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Contate um consultor!</a></ButtonOrange>
                     </div>
                 </div>
 
@@ -39,7 +39,7 @@ export default function Servicos() {
                         </p>
                     </div>
                     <div className={styles.contact}>
-                        <ButtonOrange><Link href="/contato">Contate um consultor</Link></ButtonOrange>
+                        <ButtonOrange><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Contate um consultor!</a></ButtonOrange>
                     </div>
                 </div>
 
@@ -52,7 +52,7 @@ export default function Servicos() {
                         </p>
                     </div>
                     <div className={styles.contact}>
-                        <ButtonOrange><Link href="/contato">Contate um consultor</Link></ButtonOrange>
+                        <ButtonOrange><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Contate um consultor!</a></ButtonOrange>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@ export default function Servicos() {
                         </p>
                     </div>
                     <div className={styles.contact}>
-                        <ButtonOrange><Link href="/contato">Contate um consultor</Link></ButtonOrange>
+                        <ButtonOrange><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Contate um consultor!</a></ButtonOrange>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@ export default function Servicos() {
                         </p>
                     </div>
                     <div className={styles.contact}>
-                        <ButtonOrange><Link href="/contato">Contate um consultor</Link></ButtonOrange>
+                        <ButtonOrange><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Contate um consultor!</a></ButtonOrange>
                     </div>
                 </div>
 
@@ -95,7 +95,7 @@ export default function Servicos() {
                         </p>
                     </div>
                     <div className={styles.contact}>
-                        <ButtonOrange><Link href="/contato">Contate um consultor</Link></ButtonOrange>
+                        <ButtonOrange><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Contate um consultor!</a></ButtonOrange>
                     </div>
                 </div>
 
@@ -109,7 +109,7 @@ export default function Servicos() {
                         </p>
                     </div>
                     <div className={styles.contact}>
-                        <ButtonOrange><Link href="/contato">Contate um consultor</Link></ButtonOrange>
+                        <ButtonOrange><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Contate um consultor!</a></ButtonOrange>
                     </div>
                 </div>
 
@@ -122,7 +122,7 @@ export default function Servicos() {
                         </p>
                     </div>
                     <div className={styles.contact}>
-                        <ButtonOrange><Link href="/contato">Contate um consultor</Link></ButtonOrange>
+                        <ButtonOrange><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Contate um consultor!</a></ButtonOrange>
                     </div>
                 </div>
 
@@ -136,7 +136,7 @@ export default function Servicos() {
                         </p>
                     </div>
                     <div className={styles.contact}>
-                        <ButtonOrange><Link href="/contato">Contate um consultor</Link></ButtonOrange>
+                        <ButtonOrange><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Contate um consultor!</a></ButtonOrange>
                     </div>
                 </div>
 
@@ -149,7 +149,7 @@ export default function Servicos() {
                         </p>
                     </div>
                     <div className={styles.contact}>
-                        <ButtonOrange><Link href="/contato">Contate um consultor</Link></ButtonOrange>
+                        <ButtonOrange><a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!">Contate um consultor!</a></ButtonOrange>
                     </div>
                 </div>
             </div>

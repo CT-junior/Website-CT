@@ -35,7 +35,7 @@ export default function Servicos() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Tecnologia!"
+                href="https://api.whatsapp.com/send?phone=5527997767207&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Tecnologia!"
               >
                 Contate um consultor!
               </a>
@@ -61,7 +61,7 @@ export default function Servicos() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Tecnologia!"
+                href="https://api.whatsapp.com/send?phone=5527997767207&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Tecnologia!"
               >
                 Contate um consultor!
               </a>
@@ -87,7 +87,7 @@ export default function Servicos() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Tecnologia!"
+                href="https://api.whatsapp.com/send?phone=5527997767207&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Tecnologia!"
               >
                 Contate um consultor!
               </a>
@@ -113,7 +113,7 @@ export default function Servicos() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Tecnologia!"
+                href="https://api.whatsapp.com/send?phone=5527997767207&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Tecnologia!"
               >
                 Contate um consultor!
               </a>
@@ -142,7 +142,7 @@ export default function Servicos() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1,%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Constru%C3%A7%C3%A3o%20Civil!"
+                href="https://api.whatsapp.com/send?phone=5527997767207&text=Ol%C3%A1,%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Constru%C3%A7%C3%A3o%20Civil!"
               >
                 Contate um consultor!
               </a>
@@ -166,7 +166,7 @@ export default function Servicos() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1,%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Constru%C3%A7%C3%A3o%20Civil!"
+                href="https://api.whatsapp.com/send?phone=5527997767207&text=Ol%C3%A1,%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Constru%C3%A7%C3%A3o%20Civil!"
               >
                 Contate um consultor!
               </a>
@@ -190,7 +190,7 @@ export default function Servicos() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1,%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Constru%C3%A7%C3%A3o%20Civil!"
+                href="https://api.whatsapp.com/send?phone=5527997767207&text=Ol%C3%A1,%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Constru%C3%A7%C3%A3o%20Civil!"
               >
                 Contate um consultor!
               </a>
@@ -213,7 +213,7 @@ export default function Servicos() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1,%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Constru%C3%A7%C3%A3o%20Civil!"
+                href="https://api.whatsapp.com/send?phone=5527997767207&text=Ol%C3%A1,%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Constru%C3%A7%C3%A3o%20Civil!"
               >
                 Contate um consultor!
               </a>
@@ -238,7 +238,7 @@ export default function Servicos() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1,%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Constru%C3%A7%C3%A3o%20Civil!"
+                href="https://api.whatsapp.com/send?phone=5527997767207&text=Ol%C3%A1,%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Constru%C3%A7%C3%A3o%20Civil!"
               >
                 Contate um consultor!
               </a>
@@ -264,7 +264,7 @@ export default function Servicos() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://api.whatsapp.com/send?phone=5527996431574&text=Ol%C3%A1,%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Constru%C3%A7%C3%A3o%20Civil!"
+                href="https://api.whatsapp.com/send?phone=5527997767207&text=Ol%C3%A1,%20vim%20pelo%20website%20da%20CT%20e%20tenho%20interesse%20em%20servi%C3%A7os%20de%20Constru%C3%A7%C3%A3o%20Civil!"
               >
                 Contate um consultor!
               </a>

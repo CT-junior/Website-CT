@@ -22,7 +22,7 @@ export default function Contato() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://api.whatsapp.com/send?phone=5527997767207&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT!"
+                href="https://api.whatsapp.com/send?phone=5527997767207&text=Ol%C3%A1%2C%20vim%20pelo%20website%20da%20CT%20Junior!"
               >
                 Contate um consultor!
               </a>

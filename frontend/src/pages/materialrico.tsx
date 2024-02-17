@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 
 import { TitleOrange } from "../components/TitleOrange";
@@ -7,6 +8,12 @@ import Styles from "../styles/materialrico.module.scss";
 import { Icons } from "react-toastify";
 
 export default function MaterialRico() {
+
+  const handleClick = (key: string) => {
+    localStorage.setItem('ebook_key', key);
+    window.location.href = '/ebookdownload';
+  }
+
   return (
     <main>
       <Head>
@@ -21,17 +28,17 @@ export default function MaterialRico() {
             <span>
               Indicadores Financeiros: dicas para implementar em sua empresa
             </span>
-            <ButtonOrange href="https://empresa.ctjunior.com.br/dicas-para-implementar-indicadores-financeiros-em-sua-empresa" target="_blank" >Baixar</ButtonOrange>
+            <ButtonOrange onClick={() => handleClick("indicadores_financeiros")} >Baixar</ButtonOrange>
           </div>
           <div className={Styles.materialCard}>
             <img src="/images/material_rico/Eccomerce.jpg" alt="" />
             <span>Conheça o E-commerce feito pela CT</span>
-            <ButtonOrange href="https://empresa.ctjunior.com.br/conheca-ecommerce-feito-pela-ct" target="_blank">Baixar</ButtonOrange>
+            <ButtonOrange onClick={() => handleClick("ecommerce")} >Baixar</ButtonOrange>
           </div>
           <div className={Styles.materialCard}>
             <img src="/images/material_rico/ProjetoEletrico.png" alt="" />
             <span>Entendendo as etapas de um projeto elétrico</span>
-            <ButtonOrange href="https://empresa.ctjunior.com.br/ebook-entendendo_as_etapas_de_um_projeto_eletrico" target="_blank">Baixar</ButtonOrange>
+            <ButtonOrange onClick={() => handleClick("projeto_eletrico")} >Baixar</ButtonOrange>
           </div>
           <div className={Styles.materialCard}>
             <img src="/images/material_rico/materialRico.png" alt="" />
@@ -39,17 +46,17 @@ export default function MaterialRico() {
               Planejamento estratégico: alcance resultados incríveis com essa
               ferramenta
             </span>
-            <ButtonOrange href="https://empresa.ctjunior.com.br/ebook-planejamento-estrategico" target="_blank">Baixar</ButtonOrange>
+            <ButtonOrange onClick={() => handleClick("planejamento_estrategico")} >Baixar</ButtonOrange>
           </div>
           <div className={Styles.materialCard}>
             <img src="/images/material_rico/plangastos.png" alt="" />
             <span>Planilha de gestão de gastos</span>
-            <ButtonOrange href="https://empresa.ctjunior.com.br/planilha-gestao-de-gastos" target="_blank"> Baixar</ButtonOrange>
+            <ButtonOrange onClick={() => handleClick("planilha_gestao_gastos")} >Baixar</ButtonOrange>
           </div>
           <div className={Styles.materialCard}>
             <img src="/images/material_rico/ProjetosArquitetonicos.jpg" alt="" />
             <span>Projeto arquitetônico: otimize seu tempo e reduza o caminho até seu projeto dos sonhos!</span>
-            <ButtonOrange href="https://empresa.ctjunior.com.br/lp-planilha-civil-checklist-projeto-arquitetonico" target="_blank"> Baixar</ButtonOrange>
+            <ButtonOrange onClick={() => handleClick("projeto_arquitetonico")} >Baixar</ButtonOrange>
           </div>
         </div>
       </section>
